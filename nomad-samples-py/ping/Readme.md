@@ -1,0 +1,21 @@
+## Prerequisites
+
+- Pip
+
+> 📘 Note
+> 
+> You can download pip [here](https://pip.pypa.io/en/stable/installation/).
+
+## Nomad SDK PIP
+
+To learn how to download and setup the nomad sdk pip, go to [Nomad SDK PIP](doc:nomad-sdk-pip).
+
+## Ping
+
+To ping a user, enter 1 when prompted. Then, optionally, enter the application id and user session id of the user.
+
+![](images/ping.png)
+
+> 📘 Note
+> 
+> For more information about the API call used got to [Pings the server.](ref:ping-3)
