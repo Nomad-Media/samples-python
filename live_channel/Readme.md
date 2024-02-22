@@ -258,6 +258,56 @@ To delete a live input, enter delete input when prompted. Then enter the id of t
 > 
 > For more information about the API call used go to [Deletes a live input.](ref:deleteliveinput)
 
+## Get Live Outputs
+
+To get all live outputs, enter get outputs into the prompt.
+
+![](images/get-live-outputs.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Gets live outputs.](ref:getliveoutputs)
+
+## Get Live Output
+
+To get a live output, enter get output into the prompt. Then enter the id of the output you want to get.
+
+![](images/get-live-output.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Gets a live output.](ref:getliveoutput)
+
+## Create Live Output
+
+To create a live output, enter create output when prompted. Then enter the name of the output, choose an output type, and select if the output is active or not. Then, optionally, enter the rest of the information you want to add when prompted.
+
+![](images/create-live-output.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Creates a live output.](ref:createliveoutput)
+
+## Update Live Output
+
+To create a live output, enter create output when prompted. Then enter the name of the output, choose an output type, and select if the output is active or not. Then, optionally, fill in the rest of the information you want to add.
+
+![](images/update-live-output.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Updates a live output.](ref:updateliveoutput)
+
+## Delete Live Output
+
+To delete a live output, enter delete output when prompted. Then enter the id of the output you want to delete.
+
+![](images/delete-live-output.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Deletes a live output.](ref:deleteliveoutput)
+
 ## Get Live Operators
 
 To get all live operators, enter get operators into the prompt.

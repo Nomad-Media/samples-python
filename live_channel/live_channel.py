@@ -480,6 +480,89 @@ def delete_input():
     except:
         raise Exception("Live Input failed to delete")
 
+def get_live_outputs():
+    try:
+        OUTPUTS_RESPONSE = nomad_sdk.get_live_outputs()
+
+        print(json.dumps(OUTPUTS_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Getting live outputs failed")
+    
+def get_live_output():
+    try:
+        ID = input("Enter the id of the live output you want to get: ")
+
+        OUTPUT_RESPONSE = nomad_sdk.get_live_output(ID)
+
+        print(json.dumps(OUTPUT_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Getting live output failed")
+    
+def create_live_output():
+    try:
+        NAME = input("Enter the name of the output: ")
+        TYPE = input("Enter the type of output you want to create (Archive, LiveVodHls, MediaPackage, MediaStore, Rtmp, Rtp, RtpFec, S3): ")
+        IS_ACTIVE= input("Do you want to enable the output (y/n)?: ") == "y"
+        AUDIO_BITRATE = input("Enter the audio bitrate of the output: ") if input("Do you want to set a audio bitrate (y/n)?: ") == "y" else None
+        OUTPUT_STREAM_KEY = input("Enter the output stream key of the output: ") if input("Do you want to set a output stream key (y/n)?: ") == "y" else None
+        OUTPUT_URL = input("Enter the output url of the output: ") if input("Do you want to set a output url (y/n)?: ") == "y" else None
+        SECONDARY_OUTPUT_STREAM_KEY = input("Enter the secondary output stream key of the output: ") if input("Do you want to set a secondary output stream key (y/n)?: ") == "y" else None
+        SECONDARY_OUTPUT_URL = input("Enter the secondary output url of the output: ") if input("Do you want to set a secondary output url (y/n)?: ") == "y" else None
+        VIDEO_BITRATE = input("Enter the video bitrate of the output: ") if input("Do you want to set a video bitrate (y/n)?: ") == "y" else None
+        VIDEO_BITRATE_MODE = input("Enter the video bitrate mode of the output (CBR, VBR): ") if input("Do you want to set a video bitrate mode (y/n)?: ") == "y" else None
+        VIDEO_CODEC = input("Enter the video codec of the output (H264, H265): ") if input("Do you want to set a video codec (y/n)?: ") == "y" else None
+        VIDEO_FRAMES_PER_SECOND = input("Enter the video frames per second of the output: ") if input("Do you want to set a video frames per second (y/n)?: ") == "y" else None
+        VIDEO_HEIGHT = input("Enter the video height of the output: ") if input("Do you want to set a video height (y/n)?: ") == "y" else None
+        VIDEO_WIDTH = input("Enter the video width of the output: ") if input("Do you want to set a video width (y/n)?: ") == "y" else None
+
+        OUTPUT_RESPONSE = nomad_sdk.create_live_output(NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
+                                                       OUTPUT_URL, SECONDARY_OUTPUT_STREAM_KEY, SECONDARY_OUTPUT_URL,
+                                                       VIDEO_BITRATE, VIDEO_BITRATE_MODE, VIDEO_CODEC, VIDEO_FRAMES_PER_SECOND,
+                                                       VIDEO_HEIGHT, VIDEO_WIDTH)
+        
+        print(json.dumps(OUTPUT_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Creating live output failed")
+    
+def update_live_output():
+    try:
+        ID = input("Enter the id of the output you want to update: ")
+        NAME = input("Enter the name of the output: ") if input("Do you want to update the name (y/n)?: ") == "y" else None
+        TYPE = input("Enter the type of output you want to update (Archive, LiveVodHls, MediaPackage, MediaStore, Rtmp, Rtp, RtpFec, S3): ") if input("Do you want to update the type (y/n)?: ") == "y" else None
+        IS_ACTIVE= input("Do you want to enable the output (y/n)?: ") == "y"
+        AUDIO_BITRATE = input("Enter the audio bitrate of the output: ") if input("Do you want to update the audio bitrate (y/n)?: ") == "y" else None
+        OUTPUT_STREAM_KEY = input("Enter the output stream key of the output: ") if input("Do you want to update the output stream key (y/n)?: ") == "y" else None
+        OUTPUT_URL = input("Enter the output url of the output: ") if input("Do you want to update the output url (y/n)?: ") == "y" else None
+        SECONDARY_OUTPUT_STREAM_KEY = input("Enter the secondary output stream key of the output: ") if input("Do you want to update the secondary output stream key (y/n)?: ") == "y" else None
+        SECONDARY_OUTPUT_URL = input("Enter the secondary output url of the output: ") if input("Do you want to update the secondary output url (y/n)?: ") == "y" else None
+        VIDEO_BITRATE = input("Enter the video bitrate of the output: ") if input("Do you want to update the video bitrate (y/n)?: ") == "y" else None
+        VIDEO_BITRATE_MODE = input("Enter the video bitrate mode of the output (CBR, VBR): ") if input("Do you want to update the video bitrate mode (y/n)?: ") == "y" else None
+        VIDEO_CODEC = input("Enter the video codec of the output (H264, H265): ") if input("Do you want to update the video codec (y/n)?: ") == "y" else None
+        VIDEO_FRAMES_PER_SECOND = input("Enter the video frames per second of the output: ") if input("Do you want to update the video frames per second (y/n)?: ") == "y" else None
+        VIDEO_HEIGHT = input("Enter the video height of the output: ") if input("Do you want to update the video height (y/n)?: ") == "y" else None
+        VIDEO_WIDTH = input("Enter the video width of the output: ") if input("Do you want to update the video width (y/n)?: ") == "y" else None
+
+        OUTPUT_RESPONSE = nomad_sdk.update_live_output(ID, NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
+                                                       OUTPUT_URL, SECONDARY_OUTPUT_STREAM_KEY, SECONDARY_OUTPUT_URL,
+                                                       VIDEO_BITRATE, VIDEO_BITRATE_MODE, VIDEO_CODEC, VIDEO_FRAMES_PER_SECOND,
+                                                       VIDEO_HEIGHT, VIDEO_WIDTH)
+        
+        print(json.dumps(OUTPUT_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Updating live output failed")
+    
+def delete_live_output():
+    try:
+        ID = input("Enter the id of the output you want to delete: ")
+
+        nomad_sdk.delete_live_output(ID)
+
+    except:
+        raise Exception("Deleting live output failed")
 
 def get_live_operators_main():
     try:
@@ -590,16 +673,18 @@ if __name__ == "__main__":
               "schedule event, get an asset schedule event, update an asset schedule event, remove an asset "\
               "schedule event, move a schedule event, start a live channel, stop a live channel, "\
               "add a live input schedule event, get a live input schedule event, update a live input schedule "\
-              "event, remove a live input from a channel, delete a live channel, delete a live input, get all "\
-              "operators, get a specific operator, start a broadcast, cancel a broadcast, stop a broadcast, "\
-              "get all completed segments, start a segment, cancel a segment, complete a segment, or exit")
+              "event, remove a live input from a channel, delete a live channel, delete a live input, get outputs, "\
+              "get output, create output, update output, delete output, get all operators, get a specific operator, "\
+              "start a broadcast, cancel a broadcast, stop a broadcast, get all completed segments, start a segment, "\
+              "cancel a segment, complete a segment, or exit")
         USER_INPUT = input("Enter get channels, get channel, channel refresh, clip channel, create channel, "\
                            "clip channel, get next, start tracking, update channel, get inputs, get input, "\
                            "create input, update input, add event, get event, update event, remove event, "\
                            "move event, start channel, stop channel, add input, get input event, update input "\
-                           "event, remove input, delete channel, delete input, get operators, get operator, "\
-                           "start broadcast, cancel broadcast, stop broadcast, get segments, start segment, "\
-                           "cancel segment, complete segment, or exit for each option above respectivly: ")
+                           "event, remove input, delete channel, delete input, get outputs, get output, create "\
+                           "output, update output, delete output, get operators, get operator, start broadcast, "\
+                           "cancel broadcast, stop broadcast, get segments, start segment, cancel segment, "\
+                           "complete segment, or exit for each option above respectivly: ")
         
         if USER_INPUT == "get channels":
             get_channels_main()
@@ -675,6 +760,21 @@ if __name__ == "__main__":
         
         elif USER_INPUT == "delete input":
             delete_input()
+
+        elif USER_INPUT == "get outputs":
+            get_live_outputs()
+
+        elif USER_INPUT == "get output":
+            get_live_output()
+
+        elif USER_INPUT == "create output":
+            create_live_output()
+
+        elif USER_INPUT == "update output":
+            update_live_output()
+
+        elif USER_INPUT == "delete output":
+            delete_live_output()
 
         elif USER_INPUT == "get operators":
             get_live_operators_main()
