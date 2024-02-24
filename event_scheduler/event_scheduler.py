@@ -65,39 +65,33 @@ def get_days():
 
 def create_and_update_event():
     try:
-        prompts = {
-            "CONTENT_ID": ("content id (enter y for updating event)", "input", False),
-            "CONTENT_DEFINITION_ID": EVENT_CONTENT_DEFINITION_ID,
-            "NAME": ("event name", "input", True),
-            "SERIES": ("series", "dict", ["id", "description"], False),
-            "START_DATETIME": ("start datetime (YYYY-MM-DD HH:MM:SS)", "input", True),
-            "END_DATETIME": ("end datetime (YYYY-MM-DD HH:MM:SS)", "input", True),
-            "PRIMARY_PERFORMER": ("primary performer", "dict", ["id", "description"], False),
-            "SHORT_DESCRIPTION": ("short description", "input", False),
-            "LONG_DESCRIPTION": ("long description", "input", False),
-            "THUMBNAIL_IMAGE": ("thumbnail image", "dict", ["id", "description"], False),
-            "HERO_IMAGE": ("hero image", "dict", ["id", "description"], False),
-            "LOGO_IMAGE": ("logo image", "dict", ["id", "description"], False),
-            "INTELLIGENT_PROGRAMMING": ("intelligent programming", "dict", ["id", "description"], False),
-            "EXTERNAL_URL": ("external url", "input", False),
-            "VENUE": ("venue", "dict", ["id", "description"], False),
-            "PERFORMERS": ("performer", "list", ["id", "description"], False),
-            "GENRES": ("genre", "list", ["id", "description"], False),
-            "MEDIA_ATTRIBUTES": ("media attribute", "list", ["id", "description"], False),
-            "LANGUAGES": ("language", "list", ["id", "description"], False),
-            "PRODUCTS": ("product", "list", ["id", "description"], False),
-            "FEATURE_GROUPS": ("feature group", "list", ["id", "description"], False),
-            "GROUP_SEQUENCE": ("group sequence", "input", False),
-            "RELATED_MEDIA_ITEMS": ("related media item", "list", ["id", "description"], False),
-            "RECOMMENDATION_SIMMILAR_ITEMS": ("recommendation similar item", "list", ["id", "description"], False),
-            "CONTENT_RATINGS": ("content rating", "list", ["id", "description"], False),
-            "IS_DISABLED": ("disable the event", "bool"),
-            "LIVE_CHANNEL": ("live channel", "dict", ["id", "description"], False)
-        }
 
-        data = get_data(prompts)
+        CONTENT_ID = get_input("content id", True) if input("Do you want to create a new event (y/n): ") == "n" else None
+        START_DATETIME = get_input("start datetime (YYYY-MM-DDTHH:MM:SS)", True)
+        END_DATETIME = get_input("end datetime (YYYY-MM-DDTHH:MM:SS)", True)
+        EVENT_TYPE = get_dict("event type", ["id", "description"], True)
+        SERIES = get_dict("series", ["id", "description"], False)
+        IS_DISABLED = get_bool("is disabled")
+        OVERRIDE_SERIES_PROPERTIES = get_bool("override series properties")
 
-        INFO = nomad_sdk.create_and_update_event(**data)
+        SERIES_PROPERTIES = {}
+        if OVERRIDE_SERIES_PROPERTIES or SERIES == {}:
+            NAME = get_input("name", True)
+            while True:
+                if input("Do you want to add additional properties (y/n): ") == "n":
+                    break
+                else:
+                    key = input("Enter additional property key: ")
+                    value = input("Enter additional property value: ")
+                    SERIES_PROPERTIES[key] = value
+        else:
+            NAME = None
+            SERIES_PROPERTIES = None
+
+        INFO = nomad_sdk.create_and_update_event(CONTENT_ID, EVENT_CONTENT_DEFINITION_ID,
+                                                 NAME, START_DATETIME, END_DATETIME, EVENT_TYPE, 
+                                                 SERIES, IS_DISABLED, OVERRIDE_SERIES_PROPERTIES, 
+                                                 SERIES_PROPERTIES)
         print(json.dumps(INFO, indent=4))
     except:
         raise Exception()
