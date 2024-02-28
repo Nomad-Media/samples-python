@@ -70,7 +70,7 @@ To get a search saved by id, enter 6 when prompted. Then enter the id of the sea
 > 
 > For more information about the API call used go to [Get Search Saved By Id](doc:get-search-saved-by-id)
 
-## Patch Saved Searcg
+## Patch Saved Search
 
 To patch a saved search, enter 7 when prompted. Then enter the id of the saved search you want to patch and any data you want to patch.
 
