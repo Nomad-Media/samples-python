@@ -101,7 +101,7 @@ To get all media builders, enter 9 when propmted.
 >
 > For more information on the API call used, go to [Get Media Builders](https://developer.nomad-cms.com/reference/get_mediabuilder).
 
-## Get Media Builder Ids from an asset
+## Get Media Builder Ids from an Asset
 
 To get the media builder ids from an asset, enter 14 when propmted. Then enter the id of the asset you want to get the media builder ids from.
 
