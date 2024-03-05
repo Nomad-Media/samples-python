@@ -123,7 +123,7 @@ To get all media builder items from a media builder, enter 10 when propmted. The
 
 ## Move Media Builder Items
 
-To move media builder items from one media builder to another, enter 11 when propmted. Then enter the id of the media builder the media builder is in and the media builder is in. If you don't want to move the media builder to the top of the list, enter the id of the media builder item you want to move the media builder items after.
+To move media builder items within a media builder, enter 11 when propmted. Then enter the id of the media builder and the id of the media builder item the media builder is in. If you don't want to move the media builder to the top of the list, enter the id of the media builder item you want to move the media builder items after.
 
 ![](images/move-media-builder-items.png)
 
