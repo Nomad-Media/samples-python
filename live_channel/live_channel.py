@@ -23,6 +23,7 @@ def get_channels_main():
 
     except:
         raise Exception("Getting live channels failed")
+    
 def get_channel_main():
     try:
         CHANNEL_ID = input("Enter the channel id of the channel you want to get: ")
@@ -33,6 +34,7 @@ def get_channel_main():
 
     except:
         raise Exception("Getting live channel failed")
+    
 def inputs_main():
     try:
 
@@ -42,6 +44,7 @@ def inputs_main():
 
     except:
         raise Exception("Getting live inputs failed")
+    
 def input_main():
     try:
         INPUT_ID = input("Enter the input id of the input you want to get: ")
@@ -500,6 +503,15 @@ def get_live_output():
     except:
         raise Exception("Getting live output failed")
     
+def get_live_output_types():
+    try:
+        OUTPUT_TYPES_RESPONSE = nomad_sdk.get_live_output_types()
+
+        print(json.dumps(OUTPUT_TYPES_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Getting live output types failed")
+    
 def create_live_output():
     try:
         NAME = input("Enter the name of the output: ")
@@ -572,6 +584,7 @@ def get_live_operators_main():
 
     except:
         raise Exception("Getting live operators failed")
+    
 def get_live_operator_main():
     try:
         ID = input("Enter the id of the live operator you want to get: ")
@@ -582,7 +595,6 @@ def get_live_operator_main():
 
     except:
         raise Exception("Getting live operator failed")
-
 
 def start_broadcast_main():
     try:
@@ -610,6 +622,7 @@ def cancel_broadcast_main():
 
     except:
         raise Exception("Broadcast failed to cancel")
+    
 def stop_broadcast_main():
     try:
         ID = input("Enter the id of the broadcast you want to stop: ")
@@ -619,6 +632,7 @@ def stop_broadcast_main():
 
     except:
         raise Exception("Broadcast failed to stop")
+    
 def get_completed_segments_main():
     try:
         ID = input("Enter the id of the live operator you want to get the segments from: ")
@@ -639,6 +653,7 @@ def start_segment_main():
 
     except:
         raise Exception("Segment failed to start")
+    
 def cancel_segment_main():
     try:
         ID = input("Enter the id of the segment you want to cancel: ")
@@ -674,7 +689,7 @@ if __name__ == "__main__":
               "schedule event, move a schedule event, start a live channel, stop a live channel, "\
               "add a live input schedule event, get a live input schedule event, update a live input schedule "\
               "event, remove a live input from a channel, delete a live channel, delete a live input, get outputs, "\
-              "get output, create output, update output, delete output, get all operators, get a specific operator, "\
+              "get output, get output types, create output, update output, delete output, get all operators, get a specific operator, "\
               "start a broadcast, cancel a broadcast, stop a broadcast, get all completed segments, start a segment, "\
               "cancel a segment, complete a segment, or exit")
         USER_INPUT = input("Enter get channels, get channel, channel refresh, clip channel, create channel, "\
@@ -766,6 +781,9 @@ if __name__ == "__main__":
 
         elif USER_INPUT == "get output":
             get_live_output()
+
+        elif USER_INPUT == "get output types":
+            get_live_output_types()
 
         elif USER_INPUT == "create output":
             create_live_output()

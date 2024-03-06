@@ -258,9 +258,9 @@ To delete a live input, enter delete input when prompted. Then enter the id of t
 > 
 > For more information about the API call used go to [Deletes a live input.](ref:deleteliveinput)
 
-## Get Live Outputs
+## Get Live Output Profiles
 
-To get all live outputs, enter get outputs into the prompt.
+To get all live output profiles, enter get outputs into the prompt.
 
 ![](images/get-live-outputs.png)
 
@@ -268,9 +268,9 @@ To get all live outputs, enter get outputs into the prompt.
 >
 > For more information about the API call used go to [Gets live outputs.](ref:getliveoutputs)
 
-## Get Live Output
+## Get Live Output Profile
 
-To get a live output, enter get output into the prompt. Then enter the id of the output you want to get.
+To get a live output profile, enter get output into the prompt. Then enter the id of the output you want to get.
 
 ![](images/get-live-output.png)
 
@@ -278,9 +278,19 @@ To get a live output, enter get output into the prompt. Then enter the id of the
 >
 > For more information about the API call used go to [Gets a live output.](ref:getliveoutput)
 
-## Create Live Output
+## Get Live Output Types
 
-To create a live output, enter create output when prompted. Then enter the name of the output, choose an output type, and select if the output is active or not. Then, optionally, enter the rest of the information you want to add when prompted.
+To get all live output types, enter get output types into the prompt.
+
+![](images/get-live-output-types.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Gets live output types.](ref:getliveoutputtypes)
+
+## Create Live Output Profile
+
+To create a live output profile, enter create output when prompted. Then enter the name of the output, choose an output type, and select if the output is active or not. Then, optionally, enter the rest of the information you want to add when prompted.
 
 ![](images/create-live-output.png)
 
@@ -288,9 +298,9 @@ To create a live output, enter create output when prompted. Then enter the name 
 >
 > For more information about the API call used go to [Creates a live output.](ref:createliveoutput)
 
-## Update Live Output
+## Update Live Output Profile
 
-To create a live output, enter create output when prompted. Then enter the name of the output, choose an output type, and select if the output is active or not. Then, optionally, fill in the rest of the information you want to add.
+To udpate a live output profile, enter update output when prompted. Then fill in the rest of the information you want to update.
 
 ![](images/update-live-output.png)
 
@@ -298,9 +308,9 @@ To create a live output, enter create output when prompted. Then enter the name 
 >
 > For more information about the API call used go to [Updates a live output.](ref:updateliveoutput)
 
-## Delete Live Output
+## Delete Live Output Profile
 
-To delete a live output, enter delete output when prompted. Then enter the id of the output you want to delete.
+To delete a live output profile, enter delete output when prompted. Then enter the id of the output you want to delete.
 
 ![](images/delete-live-output.png)
 
