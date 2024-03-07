@@ -485,7 +485,7 @@ def delete_input():
 
 def get_live_outputs():
     try:
-        OUTPUTS_RESPONSE = nomad_sdk.get_live_outputs()
+        OUTPUTS_RESPONSE = nomad_sdk.get_live_output_profiles()
 
         print(json.dumps(OUTPUTS_RESPONSE, indent=4))
 
@@ -496,7 +496,7 @@ def get_live_output():
     try:
         ID = input("Enter the id of the live output you want to get: ")
 
-        OUTPUT_RESPONSE = nomad_sdk.get_live_output(ID)
+        OUTPUT_RESPONSE = nomad_sdk.get_live_output_profile(ID)
 
         print(json.dumps(OUTPUT_RESPONSE, indent=4))
 
@@ -529,7 +529,7 @@ def create_live_output():
         VIDEO_HEIGHT = input("Enter the video height of the output: ") if input("Do you want to set a video height (y/n)?: ") == "y" else None
         VIDEO_WIDTH = input("Enter the video width of the output: ") if input("Do you want to set a video width (y/n)?: ") == "y" else None
 
-        OUTPUT_RESPONSE = nomad_sdk.create_live_output(NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
+        OUTPUT_RESPONSE = nomad_sdk.create_live_output_profile(NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
                                                        OUTPUT_URL, SECONDARY_OUTPUT_STREAM_KEY, SECONDARY_OUTPUT_URL,
                                                        VIDEO_BITRATE, VIDEO_BITRATE_MODE, VIDEO_CODEC, VIDEO_FRAMES_PER_SECOND,
                                                        VIDEO_HEIGHT, VIDEO_WIDTH)
@@ -557,7 +557,7 @@ def update_live_output():
         VIDEO_HEIGHT = input("Enter the video height of the output: ") if input("Do you want to update the video height (y/n)?: ") == "y" else None
         VIDEO_WIDTH = input("Enter the video width of the output: ") if input("Do you want to update the video width (y/n)?: ") == "y" else None
 
-        OUTPUT_RESPONSE = nomad_sdk.update_live_output(ID, NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
+        OUTPUT_RESPONSE = nomad_sdk.update_live_output_profile(ID, NAME, TYPE, IS_ACTIVE, AUDIO_BITRATE, OUTPUT_STREAM_KEY,
                                                        OUTPUT_URL, SECONDARY_OUTPUT_STREAM_KEY, SECONDARY_OUTPUT_URL,
                                                        VIDEO_BITRATE, VIDEO_BITRATE_MODE, VIDEO_CODEC, VIDEO_FRAMES_PER_SECOND,
                                                        VIDEO_HEIGHT, VIDEO_WIDTH)
@@ -571,7 +571,7 @@ def delete_live_output():
     try:
         ID = input("Enter the id of the output you want to delete: ")
 
-        nomad_sdk.delete_live_output(ID)
+        nomad_sdk.delete_live_output_profile(ID)
 
     except:
         raise Exception("Deleting live output failed")
