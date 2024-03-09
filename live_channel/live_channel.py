@@ -575,6 +575,103 @@ def delete_live_output():
 
     except:
         raise Exception("Deleting live output failed")
+    
+def get_live_output_profile_groups():
+    try:
+        OUTPUT_PROFILE_GROUPS_RESPONSE = nomad_sdk.get_live_output_profile_groups()
+
+        print(json.dumps(OUTPUT_PROFILE_GROUPS_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Getting live output profile groups failed")
+    
+def get_live_output_profile_group():
+    try:
+        ID = input("Enter the id of the output profile group you want to get: ")
+
+        OUTPUT_PROFILE_GROUP_RESPONSE = nomad_sdk.get_live_output_profile_group(ID)
+
+        print(json.dumps(OUTPUT_PROFILE_GROUP_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Getting live output profile group failed")
+    
+def create_live_output_profile_group():
+    try:
+        NAME = input("Enter the name of the output profile group: ")
+        IS_ENABLED = input("Do you want to enable the output profile group (y/n)?: ") == "y"
+        MANIFEST_TYPE = input("Enter the manifest type of the output profile group: ")
+        IS_DEFAULT_GROUP = input("Do you want to enable the default group (y/n)?: ") == "y"
+        LIVE_OUTPUT_TYPE_ID = input("Enter the live output type id of the output profile group: ")
+        ARCHIVE_LIVE_OUTPUT_PROFILE_ID = input("Enter the archive live output profile id of the output profile group: ") if input("Do you want to add an archive live output profile (y/n)?: ") == "y" else None
+        LIVE_OUTPUT_PROFILE_IDS = input("Enter the live output profile ids of the output profile group (separated by comma): ").split(",")
+
+        LIVE_OUTPUT_TYPES = nomad_sdk.get_live_output_types()
+        LIVE_OUTPUT_TYPE = next(live_output_type for live_output_type in LIVE_OUTPUT_TYPES if live_output_type["id"] == LIVE_OUTPUT_TYPE_ID)
+        ARCHIVE_LIVE_OUTPUT_PROFILE = None
+        LIVE_OUTPUT_PROFILE = []
+
+        LIVE_OUTPUTS = nomad_sdk.get_live_output_profiles()
+
+        for live_output in LIVE_OUTPUTS:
+            if live_output["id"] == ARCHIVE_LIVE_OUTPUT_PROFILE_ID:
+                ARCHIVE_LIVE_OUTPUT_PROFILE = live_output
+            
+            if live_output["id"] in LIVE_OUTPUT_PROFILE_IDS:
+                LIVE_OUTPUT_PROFILE.append(live_output)
+
+        OUTPUT_PROFILE_GROUP_RESPONSE = nomad_sdk.create_live_output_profile_group(NAME, IS_ENABLED, MANIFEST_TYPE,
+            IS_DEFAULT_GROUP, LIVE_OUTPUT_TYPE, ARCHIVE_LIVE_OUTPUT_PROFILE, LIVE_OUTPUT_PROFILE)
+
+        print(json.dumps(OUTPUT_PROFILE_GROUP_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Creating live output profile group failed")
+
+def update_live_output_profile_group():
+    try:
+        ID = input("Enter the id of the output profile group you want to update: ")
+        NAME = input("Enter the name of the output profile group: ") if input("Do you want to update the name (y/n)?: ") == "y" else None
+        IS_ENABLED = input("Do you want to enable the output profile group (y/n)?: ") == "y"
+        MANIFEST_TYPE = input("Enter the manifest type of the output profile group") if input("Do you want to update the manifest type (y/n)?: ") == "y" else None
+        IS_DEFAULT_GROUP = input("Do you want to enable the default group (y/n)?: ") == "y"
+        LIVE_OUTPUT_TYPE_ID = input("Enter the live output type id of the output profile group") if input("Do you want to update the live output type id (y/n)?: ") == "y" else None
+        ARCHIVE_LIVE_OUTPUT_PROFILE_ID = input("Enter the archive live output profile id of the output profile group") if input("Do you want to update the archive live output profile id (y/n)?: ") == "y" else None
+        LIVE_OUTPUT_PROFILE_IDS = input("Enter the live output profile ids of the output profile group (separated by comma): ").split(",") if input("Do you want to update the live output profile ids (y/n)?: ") == "y" else None
+
+        LIVE_OUTPUT_TYPES = nomad_sdk.get_live_output_types()
+        LIVE_OUTPUT_TYPE = next(live_output_type for live_output_type in LIVE_OUTPUT_TYPES if live_output_type["id"] == LIVE_OUTPUT_TYPE_ID) if LIVE_OUTPUT_TYPE_ID else None
+        ARCHIVE_LIVE_OUTPUT_PROFILE = None
+        LIVE_OUTPUT_PROFILE = []
+
+        LIVE_OUTPUTS = nomad_sdk.get_live_output_profiles()
+
+        for live_output in LIVE_OUTPUTS:
+            if live_output["id"] == ARCHIVE_LIVE_OUTPUT_PROFILE_ID:
+                ARCHIVE_LIVE_OUTPUT_PROFILE = live_output
+            
+            if LIVE_OUTPUT_PROFILE_IDS and live_output["id"] in LIVE_OUTPUT_PROFILE_IDS:
+                LIVE_OUTPUT_PROFILE.append(live_output)
+
+        if LIVE_OUTPUT_PROFILE == []:
+            LIVE_OUTPUT_PROFILE = None
+
+        OUTPUT_PROFILE_GROUP_RESPONSE = nomad_sdk.update_live_output_profile_group(ID, NAME, IS_ENABLED, MANIFEST_TYPE,
+            IS_DEFAULT_GROUP, LIVE_OUTPUT_TYPE, ARCHIVE_LIVE_OUTPUT_PROFILE, LIVE_OUTPUT_PROFILE)
+
+        print(json.dumps(OUTPUT_PROFILE_GROUP_RESPONSE, indent=4))
+
+    except:
+        raise Exception("Updating live output profile group failed")
+    
+def delete_live_output_profile_group():
+    try:
+        ID = input("Enter the id of the output profile group you want to delete: ")
+
+        nomad_sdk.delete_live_output_profile_group(ID)
+
+    except:
+        raise Exception("Deleting live output profile group failed")
 
 def get_live_operators_main():
     try:
@@ -689,17 +786,19 @@ if __name__ == "__main__":
               "schedule event, move a schedule event, start a live channel, stop a live channel, "\
               "add a live input schedule event, get a live input schedule event, update a live input schedule "\
               "event, remove a live input from a channel, delete a live channel, delete a live input, get outputs, "\
-              "get output, get output types, create output, update output, delete output, get all operators, get a specific operator, "\
+              "get output, get output types, create output, update output, delete output, get output groups, get output "\
+              "group, create output group, update output group, delete output group, get all operators, get a specific operator, "\
               "start a broadcast, cancel a broadcast, stop a broadcast, get all completed segments, start a segment, "\
               "cancel a segment, complete a segment, or exit")
         USER_INPUT = input("Enter get channels, get channel, channel refresh, clip channel, create channel, "\
                            "clip channel, get next, start tracking, update channel, get inputs, get input, "\
                            "create input, update input, add event, get event, update event, remove event, "\
                            "move event, start channel, stop channel, add input, get input event, update input "\
-                           "event, remove input, delete channel, delete input, get outputs, get output, create "\
-                           "output, update output, delete output, get operators, get operator, start broadcast, "\
-                           "cancel broadcast, stop broadcast, get segments, start segment, cancel segment, "\
-                           "complete segment, or exit for each option above respectivly: ")
+                           "event, remove input, delete channel, delete input, get outputs, get output, get "\
+                           "output types, create output, update output, delete output, get output groups, get "\
+                           "output group, create output group, update output group, delete output group, get "\
+                           "operators, get operator, start broadcast, cancel broadcast, stop broadcast, get "\
+                           "segments, start segment, cancel segment, complete segment, or exit for each option above respectivly: ")
         
         if USER_INPUT == "get channels":
             get_channels_main()
@@ -793,6 +892,21 @@ if __name__ == "__main__":
 
         elif USER_INPUT == "delete output":
             delete_live_output()
+
+        elif USER_INPUT == "get output groups":
+            get_live_output_profile_groups()
+
+        elif USER_INPUT == "get output group":
+            get_live_output_profile_group()
+
+        elif USER_INPUT == "create output group":
+            create_live_output_profile_group()
+
+        elif USER_INPUT == "update output group":
+            update_live_output_profile_group()
+
+        elif USER_INPUT == "delete output group":
+            delete_live_output_profile_group()
 
         elif USER_INPUT == "get operators":
             get_live_operators_main()

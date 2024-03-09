@@ -318,6 +318,46 @@ To delete a live output profile, enter delete output when prompted. Then enter t
 >
 > For more information about the API call used go to [Deletes a live output.](ref:deleteliveoutput)
 
+## Get Live Output Profile Groups
+
+To get all live output profile groups, enter get output groups into the prompt.
+
+![](images/get-live-output-groups.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Gets live output groups.](ref:getliveoutputgroups)
+
+## Get Live Output Profile Group
+
+To get a live output profile group, enter get output group when prompted. Then enter the id of the output group you want to get.
+
+![](images/get-live-output-group.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Gets a live output group.](ref:getliveoutputgroup)
+
+## Create Live Output Profile Group
+
+To create a live output profile group, enter create output group when prompted. Then enter the name of the output group, whether or not to enable the group, the manifest type, whether or not to make the group the default group, optionally, the archive live output profile id, and the output ids you want to add to the group.
+
+![](images/create-live-output-group.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Creates a live output group.](ref:createliveoutputgroup)
+
+## Update Live Output Profile Group
+
+To update a live output profile group, enter update output group when prompted. Then enter the id of the output group you want to update and the rest of the information you want to update.
+
+![](images/update-live-output-group.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Updates a live output group.](ref:updateliveoutputgroup)
+
 ## Get Live Operators
 
 To get all live operators, enter get operators into the prompt.
