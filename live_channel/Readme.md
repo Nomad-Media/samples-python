@@ -358,6 +358,16 @@ To update a live output profile group, enter update output group when prompted. 
 >
 > For more information about the API call used go to [Updates a live output group.](ref:updateliveoutputgroup)
 
+## Delete Live Output Profile Group
+
+To delete a live output profile group, enter delete output group when prompted. Then enter the id of the output group you want to delete.
+
+![](images/delete-live-output-group.png)
+
+> 📘 Note
+>
+> For more information about the API call used go to [Deletes a live output group.](ref:deleteliveoutputgroup)
+
 ## Get Live Operators
 
 To get all live operators, enter get operators into the prompt.
