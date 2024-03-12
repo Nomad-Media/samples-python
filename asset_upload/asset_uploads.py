@@ -43,7 +43,8 @@ def upload_related_asset():
         FILE = input("Enter file path: ")
         LANGUAGE_ID = input("Enter language id: ") if input("Do you want to add a language id (y/n): ") == "y" else None
 
-        ASSET_INFO = nomad_sdk.upload_related_asset(EXISTING_ASSET_ID, RELATED_ASSET_ID, NEW_RELATED_ASSET_METADATA_TYPE, FILE, UPLOAD_OVERWRITE_OPTION, LANGUAGE_ID)
+        ASSET_INFO = nomad_sdk.upload_related_asset(EXISTING_ASSET_ID, RELATED_ASSET_ID, NEW_RELATED_ASSET_METADATA_TYPE, 
+                                                    UPLOAD_OVERWRITE_OPTION, FILE, LANGUAGE_ID)
 
         print(json.dumps(ASSET_INFO, indent=4))
     except Exception as e:
