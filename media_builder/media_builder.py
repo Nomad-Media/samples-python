@@ -20,10 +20,11 @@ def create_media_builder():
         DESTINATION_FOLDER_ID = get_input("destination folder id", False)
         COLLECTIONS = get_input("collections", False)
         RELATED_CONTENTS = get_input("related contents", False)
+        TAGS = get_input("tags", False)
         PROPERTIES = get_input("properties", False)
 
         MEDIA_BUILD = nomad_sdk.create_media_builder(NAME, DESTINATION_FOLDER_ID, COLLECTIONS,
-            RELATED_CONTENTS, PROPERTIES)
+            RELATED_CONTENTS, TAGS, PROPERTIES)
         
         print(json.dumps(MEDIA_BUILD, indent=4))
     except:
@@ -166,10 +167,11 @@ def update_media_builder():
         DESTINATION_FOLDER_ID = get_input("destination folder id", False)
         COLLECTIONS = get_input("collections", False)
         RELATED_CONTENTS = get_input("related contents", False)
+        TAGS = get_input("tags", False)
         PROPERTIES = get_input("properties", False)
 
         MEDIA_BUILD = nomad_sdk.update_media_builder(MEDIA_BUILDER_ID, NAME, DESTINATION_FOLDER_ID,
-            COLLECTIONS, RELATED_CONTENTS, PROPERTIES)
+            COLLECTIONS, RELATED_CONTENTS, TAGS, PROPERTIES)
         
         print(json.dumps(MEDIA_BUILD, indent=4))
     except:
