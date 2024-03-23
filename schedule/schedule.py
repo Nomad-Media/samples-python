@@ -404,6 +404,21 @@ def update_playlist():
     except:
         raise Exception()
     
+def update_playlist_video():
+    try:
+        prompts = {
+            "PLAYLIST_ID": ("playlist id", "input", True),
+            "ITEM_ID": ("item id", "input", True),
+            "ASSET": ("asset", "dict", ["id", "description"], False)
+        }
+
+        data = get_data(prompts)
+
+        INFO = nomad_sdk.update_playlist_video(**data)
+        print(json.dumps(INFO, indent=4))
+    except:
+        raise Exception()
+    
 def update_schedule_item_asset():
     try:
         prompts = {
@@ -530,6 +545,7 @@ functions = {
     "27": update_schedule_item_live_channel,
     "28": update_schedule_item_playlist,
     "29": update_schedule_item_search_filter,
+    "30": update_playlist_video
 }
 
 if __name__ == "__main__":
