@@ -322,7 +322,7 @@ To update an annotation, enter 38 when prompted. Then enter the id of the asset 
 
 ## Update Asset
 
-To update an asset, enter 39 when prompted. Then enter the id of the asset you want to update and the information you want to update it with.
+To update an asset, enter 39 when prompted. Then enter the id of the asset you want to update and the display name, display date, available start date, available end date, and/or any additional properties you want to update. 
 
 ![](images/update-asset.png)
 

@@ -563,7 +563,9 @@ def update_asset():
         
         if input("Do you want to add custom properties (y/n): ") == "y":
             while True:
-                CUSTOM_PROPERTIES[input("Enter a key: ")] = input("Enter a value: ")
+                KEY = input("Enter a key: ")
+                VALUE = input("Enter a value: ")
+                CUSTOM_PROPERTIES[KEY] = VALUE
 
                 if input("Do you want to add another custom property (y/n): ") == "n":
                     break
