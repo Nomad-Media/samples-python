@@ -8,6 +8,12 @@ import json
 def get_input(prompt):
     return input(f"Enter {prompt}: ") if input(f"Do you want to add {prompt} (y/n): ") == "y" else ""
 
+def get_user():
+    try:
+        print(nomad_sdk.get_user())
+    except:
+        raise Exception()
+
 def update_user():
     try:
         ADDRESS = get_input("Enter new address")
