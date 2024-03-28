@@ -10,7 +10,7 @@ def get_input(prompt):
 
 def get_user():
     try:
-        print(nomad_sdk.get_user())
+        print(json.dumps(nomad_sdk.get_user(), indent=4))
     except:
         raise Exception()
 
@@ -81,9 +81,10 @@ def change_password():
 if __name__ == "__main__":
     while True:
         print("Do you want to update the user, change your email or password, or quit: ")
-        USER_INPUT = input("Enter user for update user, email for change email, password for change password, and exit to quit")
-        
-        if USER_INPUT == "user":
+        USER_INPUT = input("Enter get for get user, user for update user, email for change email, password for change password, and exit to quit: ")
+        if USER_INPUT == "get":
+            get_user()
+        elif USER_INPUT == "user":
             update_user()
         elif USER_INPUT == "email":
             change_email()
