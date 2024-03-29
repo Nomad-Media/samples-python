@@ -18,7 +18,7 @@ To create content, enter create when prompted. Then enter the content definition
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Creates a content.](ref:createcontent)
+> For more information about the API calls used go to [Create Content](https://developer.nomad-cms.com/docs/create-content)
 
 ## Update Content
 
@@ -28,7 +28,7 @@ To add/update information to your content, enter update when prompted. Then ente
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Updates a content.](ref:updatecontent)
+> For more information about the API calls used go to [Update Content](https://developer.nomad-cms.com/docs/update-content)
 
 ## Get Content
 
@@ -38,7 +38,7 @@ To get content enter get when prompted. Then enter the id and content definition
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets a content.](ref:getcontent-1)
+> For more information about the API calls used go to [Get Content](https://developer.nomad-cms.com/docs/get-content)
 
 ## Get User Tracking
 
@@ -48,7 +48,7 @@ To get user tracking, enter tracking when prompted. Then enter the id and conten
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets the content user track.](ref:getcontentusertrack)
+> For more information about the API calls used go to [Get Content User Tracking](https://developer.nomad-cms.com/docs/get-content-user-track)
 
 ## Delete Content
 
@@ -58,4 +58,4 @@ To delete content, enter delete when prompted. Then enter the content definition
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a content.](ref:deletecontent)
+> For more information about the API calls used go to [Delete Content](https://developer.nomad-cms.com/docs/delete-content)

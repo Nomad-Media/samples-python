@@ -18,7 +18,7 @@ To refresh your token, enter "refresh" when prompted. You will then get a new to
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Refreshes the authentication token.](ref:refresh)
+> For more information about the API call used go to [Refresh Token](https://developer.nomad-cms.com/docs/refresh-token)
 
 ## Forgot Password
 
@@ -30,7 +30,7 @@ To reset your password, enter "reset". You will then get sent an email with your
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Forgot Password](ref:forgotpassword)
+> For more information about the API call used go to [Forgot Password](https://developer.nomad-cms.com/docs/forgot-password)
 
 ## Reset Password
 
@@ -42,7 +42,7 @@ If you didn't get the email enter "n" when prompted. This will send another auth
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Reset Password](ref:resetpassword)
+> For more information about the API call used go to [Reset Password](https://developer.nomad-cms.com/docs/reset-password)
 
 ## Logout
 
@@ -52,4 +52,4 @@ To logout, enter logout at the prompt. You will receive a message stating that y
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Logout](ref:logout-1)
+> For more information about the API call used go to [Logout](https://developer.nomad-cms.com/docs/logout)

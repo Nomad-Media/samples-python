@@ -18,4 +18,4 @@ To change the session status of a user input 1 to select the change_status funct
 
 > 📘 Notes:
 > 
-> For more information about the API calls used go to [Changes a session status.](ref:changesessionstatus)
+> For more information about the API calls used go to [Changes a session status.](https://developer.nomad-cms.com/docs/change-session-status)

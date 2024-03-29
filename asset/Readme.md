@@ -18,7 +18,7 @@ To archive an asset, enter 1 when prompted. Then enter the id of the asset you w
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Archives an asset.](ref:archiveasset)
+> For more information about the API call used got to [Archives Asset](https://developer.nomad-cms.com/docs/archive-asset)
 
 ## Clip Asset
 
@@ -28,7 +28,7 @@ To clip an asset, enter 3 when prompted. Then enter the id of the asset you want
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Clips an asset.](ref:clipasset)
+> For more information about the API call used got to [Clips Asset](https://developer.nomad-cms.com/docs/clip-asset)
 
 ## Copy Asset
 
@@ -38,7 +38,7 @@ To copy an asset, enter 4 when prompted. Then enter the id of the asset you want
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Copies an asset.](ref:copyasset)
+> For more information about the API call used got to [Copy Asset](https://developer.nomad-cms.com/docs/copy-asset)
 
 ## Create Annotation
 
@@ -48,7 +48,7 @@ To create an annotation, enter 5 when prompted. Then enter the id of the asset y
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Creates an annotation.](ref:createannotation)
+> For more information about the API call used got to [Create Annotation](https://developer.nomad-cms.com/docs/create-annotation)
 
 ## Create Asset Ad Break
 
@@ -58,7 +58,7 @@ To create an asset ad break, enter 6 when prompted. Then enter the id of the ass
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Create Asset Ad Break](doc:create-asset-ad-break)
+> For more information about the API call used got to [Create Asset Ad Break](https://developer.nomad-cms.com/docs/create-asset-ad-break)
 
 ## Create Folder Asset
 
@@ -68,7 +68,7 @@ To create a folder asset, enter 7 when prompted. Then enter the id of the folder
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Create Folder Asset](doc:create-folder-asset)
+> For more information about the API call used got to [Create Folder Asset](https://developer.nomad-cms.com/docs/create-folder-asset)
 
 ## Create Placeholder Asset
 
@@ -78,7 +78,7 @@ To create a placeholder asset, enter 8 when prompted. Then enter the folder you 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Create Placeholder Asset](doc:create-placeholder-asset)
+> For more information about the API call used got to [Create Placeholder Asset](https://developer.nomad-cms.com/docs/create-placeholder-asset)
 
 ## Create Screenshot at Time Code
 
@@ -88,7 +88,7 @@ To create a screenshot at a time code, enter 9 when prompted. Then enter the id 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Create Screenshot At Timecode](doc:create-screenshot-at-timecode)
+> For more information about the API call used got to [Create Screenshot At Timecode](https://developer.nomad-cms.com/docs/create-screenshot-at-timecode)
 
 ## Delete Annotation
 
@@ -98,7 +98,7 @@ To delete an annotation, enter 10 when prompted. Then enter the id of the asset 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Delete Annotation](doc:delete-annotation)
+> For more information about the API call used got to [Delete Annotation](https://developer.nomad-cms.com/docs/delete-annotation)
 
 ## Delete Asset
 
@@ -108,7 +108,7 @@ To delete an asset, enter 11 when prompted. Then enter the id of the asset to be
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Delete Asset](doc:delete-asset)
+> For more information about the API call used got to [Delete Asset](https://developer.nomad-cms.com/docs/delete-asset)
 
 ## Delete Asset Ad Break
 
@@ -118,7 +118,7 @@ To delete an asset ad break, enter 12 when prompted. Then enter the id of the as
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Delete Asset Ad Break](doc:delete-asset-ad-break)
+> For more information about the API call used got to [Delete Asset Ad Break](https://developer.nomad-cms.com/docs/delete-asset-ad-break)
 
 ## Download Archive Asset
 
@@ -128,7 +128,7 @@ To download an archive of an asset, enter 13 when prompted. Then enter the id of
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Download Archive Asset](doc:download-archive-asset)
+> For more information about the API call used got to [Download Archive Asset](https://developer.nomad-cms.com/docs/download-archive-asset)
 
 ## Duplicate Asset
 
@@ -138,7 +138,7 @@ To duplicate an asset, enter 14 when prompted. Then enter the id of the asset yo
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Duplicate Asset](doc:duplicate-asset)
+> For more information about the API call used got to [Duplicate Asset](https://developer.nomad-cms.com/docs/duplicate-asset)
 
 ## Get Annotations
 
@@ -148,7 +148,7 @@ To get all of the annotations in an asset, enter 15 when prompted. Then enter th
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Annotations](doc:get-annotations)
+> For more information about the API call used got to [Get Annotations](https://developer.nomad-cms.com/docs/get-annotations)
 
 ## Get Asset
 
@@ -158,7 +158,7 @@ To get an asset, enter 16 when prompted. Then enter the id of the asset you want
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset](doc:get-asset)
+> For more information about the API call used got to [Get Asset](https://developer.nomad-cms.com/docs/get-asset)
 
 ## Get Asset Ad Breaks
 
@@ -168,7 +168,7 @@ To get all of the asset ad breaks in an asset, enter 17 when prompted. Then ente
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset Ad Break](doc:get-asset-ad-break)
+> For more information about the API call used got to [Get Asset Ad Break](https://developer.nomad-cms.com/docs/get-asset-ad-breaks)
 
 ## Get Asset Details
 
@@ -178,7 +178,7 @@ To get the details of an asset, enter 19 when prompted. Then enter the id of the
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset Details](doc:get-asset-details)
+> For more information about the API call used got to [Get Asset Details](https://developer.nomad-cms.com/docs/get-asset-details)
 
 ## Get Asset Manifest With Cookies
 
@@ -188,7 +188,7 @@ To get the asset manifest with cookies, enter 20 when prompted. Then enter the i
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset Manifest With Cookies](doc:get-asset-manifest-with-cookies)
+> For more information about the API call used got to [Get Asset Manifest With Cookies](https://developer.nomad-cms.com/docs/get-asset-manifest-with-cookies)
 
 ## Get Asset Metadata Summary
 
@@ -198,7 +198,7 @@ To get the metadata summary of an asset, enter 21 when prompted. Then enter the 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset Metadata Summary](doc:get-asset-metadata-summary)
+> For more information about the API call used got to [Get Asset Metadata Summary](https://developer.nomad-cms.com/docs/get-asset-metadata-summary)
 
 ## Get Asset Parent Folders
 
@@ -208,7 +208,7 @@ To get the parent folders of an asset, enter 22 when prompted. Then enter the id
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Asset Parent Folders](doc:get-asset-parent-folders)
+> For more information about the API call used got to [Get Asset Parent Folders](https://developer.nomad-cms.com/docs/get-asset-parent-folders)
 
 ## Get User Upload Parts
 
@@ -218,7 +218,7 @@ To get the parts of a user upload, enter 25 when prompted. Then enter the id of 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get User Upload Parts](doc:get-user-upload-parts)
+> For more information about the API call used got to [Get User Upload Parts](https://developer.nomad-cms.com/docs/get-user-upload-parts)
 
 ## Get User Uploads
 
@@ -228,7 +228,7 @@ To get the uploads of a user, enter 26 when prompted. Then enter whether or not 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get User Uploads](doc:get-user-uploads)
+> For more information about the API call used got to [Get User Uploads](https://developer.nomad-cms.com/docs/get-user-uploads)
 
 ## Import Annotations
 
@@ -238,7 +238,7 @@ To import annotations, enter 27 when prompted. Then enter the id of the asset yo
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Import Annotation](doc:import-annotation)
+> For more information about the API call used got to [Import Annotation](https://developer.nomad-cms.com/docs/import-annotations)
 
 ## Index Asset
 
@@ -248,7 +248,7 @@ To index an asset, enter 28 when prompted. Then enter the id of the asset you wa
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Index Asset](doc:index-asset)
+> For more information about the API call used got to [Index Asset](https://developer.nomad-cms.com/docs/index-asset)
 
 ## Move Asset
 
@@ -258,7 +258,7 @@ To move an asset, enter 30 when prompted. Then enter the id of the asset you wan
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Move Asset](doc:move-asset)
+> For more information about the API call used got to [Move Asset](https://developer.nomad-cms.com/docs/move-asset)
 
 ## Record Asset Tracking Beacon
 
@@ -268,7 +268,7 @@ To record an asset tracking beacon, enter 31 when prompted. Then enter the id of
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Record Asset Tracking Beacon](doc:record-asset-tracking-beacon)
+> For more information about the API call used got to [Record Asset Tracking Beacon](https://developer.nomad-cms.com/docs/record-asset-tracking-beacon)
 
 ## Reprocess Asset
 
@@ -278,7 +278,7 @@ To reprocess an asset, enter 33 when prompted. Then enter the ids of the asset y
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Reprocess Asset](doc:reprocess-asset)
+> For more information about the API call used got to [Reprocess Asset](https://developer.nomad-cms.com/docs/reprocess-asset)
 
 ## Restore Asset
 
@@ -288,7 +288,7 @@ To restore an asset, enter 34 when prompted. Then enter the id of the asset you 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Restore Asset](doc:restore-asset)
+> For more information about the API call used got to [Restore Asset](https://developer.nomad-cms.com/docs/restore-asset)
 
 ## Share Asset
 
@@ -298,7 +298,7 @@ To share an asset, enter 35 when prompted. Then enter the id of the asset you wa
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Share Asset](doc:share-asset)
+> For more information about the API call used got to [Share Asset](https://developer.nomad-cms.com/docs/share-asset)
 
 ## Start Workflow
 
@@ -308,7 +308,7 @@ To start a workflow, enter 36 when prompted. Then enter the key value for the ac
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Start Workflow](doc:start-workflow)
+> For more information about the API call used got to [Start Workflow](https://developer.nomad-cms.com/docs/start-workflow)
 
 ## Update Annotation
 
@@ -318,7 +318,7 @@ To update an annotation, enter 38 when prompted. Then enter the id of the asset 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Update Annotation](doc:update-annotation)
+> For more information about the API call used got to [Update Annotation](https://developer.nomad-cms.com/docs/update-annotation)
 
 ## Update Asset
 
@@ -328,7 +328,7 @@ To update an asset, enter 39 when prompted. Then enter the id of the asset you w
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Update Asset](doc:update-asset)
+> For more information about the API call used got to [Update Asset](https://developer.nomad-cms.com/docs/update-asset)
 
 ## Update Asset Ad Break
 
@@ -338,7 +338,7 @@ To update an asset ad break, enter 40 when prompted. Then enter the id of the as
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Update Asset Ad Break](doc:update-asset-ad-break)
+> For more information about the API call used got to [Update Asset Ad Break](https://developer.nomad-cms.com/docs/update-asset-ad-break)
 
 ## Update Asset Language
 
@@ -348,4 +348,4 @@ To update an asset's language, enter 41 when prompted. Then enter the id of the 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Update Asset Language](doc:update-asset-language)
+> For more information about the API call used got to [Update Asset Language](https://developer.nomad-cms.com/docs/update-asset-language)

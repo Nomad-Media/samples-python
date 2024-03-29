@@ -6,7 +6,7 @@ To create a movie group, enter create when prompted. Then you need to enter the 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Creates a content group.](ref:createcontentgroup)
+> For more information about the API call used go to [Create Content Group](ref:create-content-group)
 
 ## Get Movie Groups
 
@@ -16,7 +16,7 @@ To get all of the movie groups you created and were shared to your user, enter g
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a content group.](ref:getcontentgroup)
+> For more information about the API call used go to [Get Content Group](ref:get-content-group)
 
 ## Get Movie Group
 
@@ -26,7 +26,7 @@ To get a specific movie group by id, enter get group when prompted. Then enter t
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets content groups.](ref:getcontentgroups)
+> For more information about the API call used go to [Gets Content Groups](ref:get-content-groups)
 
 ## Add Movie to Movie Group
 
@@ -36,7 +36,7 @@ To add movies to a movie group, enter add when prompted. Then enter the id of th
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds content to a content group.](ref:addcontenttocontentgroup)
+> For more information about the API call used go to [Adds content to a Content Group](ref:add-content-to-content-group)
 
 ## Remove Movie from Movie Group
 
@@ -46,7 +46,7 @@ To remove a movie from a movie group, enter the id of the group you want to remo
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Removes contents from content group.](ref:removecontentsfromcontentgroups)
+> For more information about the API call used go to [Removes contents from Content Group](ref:remove-contents-from-content-groups)
 
 ## Rename Movie Group
 
@@ -56,7 +56,7 @@ To rename a movie group, enter rename when prompted. Then enter the movie group 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Renames a content group.](ref:renamecontentgroup)
+> For more information about the API call used go to [Rename Content Group](ref:rename-content-group)
 
 ## Share Movie Group with User
 
@@ -66,7 +66,7 @@ To share a movie group with a user, enter start sharing when prompted. Then ente
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Shares a content group.](ref:sharecontentgroup)
+> For more information about the API call used go to [Share Content Group with User](ref:share-content-group-with-user)
 
 ## Stop Sharing Movie Group with User
 
@@ -76,7 +76,7 @@ To stop sharing a movie group with a user, enter stop sharing when prompted. The
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Stops sharing a content group.](ref:stopsharingcontentgroup)
+> For more information about the API call used go to [Stops Sharing Content Group with User](ref:stop-sharing-content-group-with-user)
 
 ## Delete Movie Group
 
@@ -86,4 +86,4 @@ To delete a movie group, enter the id of the movie group you want to delete.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a content group.](ref:deletecontentgroup)
+> For more information about the API call used go to [Delete Content Group](ref:delete-content-group)

@@ -18,7 +18,7 @@ To get all live channels, enter get channels into the prompt.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets live channels.](ref:getlivechannels)
+> For more information about the API call used go to [Get Live Channels](https://developer.nomad-cms.com/docs/get-live-channels)
 
 ## Get Live Channel
 
@@ -28,7 +28,7 @@ To get a live channel enter get channel into the prompt. Then enter the id of th
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a live channel.](ref:getlivechannel)
+> For more information about the API call used go to [Get Live Channel](https://developer.nomad-cms.com/docs/get-live-channel)
 
 ## Live Channel Refresh
 
@@ -38,7 +38,7 @@ To refresh all live channels enter channel refresh when prompted.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Refresh Live Channels](ref:livechannelrefresh)
+> For more information about the API call used go to [Refresh Live Channels](https://developer.nomad-cms.com/docs/refresh-live-channels)
 
 ## Create Live Channel
 
@@ -48,7 +48,7 @@ To create a live channel, enter create channel into the prompt. Then enter the n
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Creates a live channel.](ref:createlivechannel)
+> For more information about the API call used go to [Create Live Channel](https://developer.nomad-cms.com/docs/create-live-channel)
 
 ## Clip Live Channel
 
@@ -58,7 +58,7 @@ To clip a live channel enter clip channel into the prompt. Then enter the id of 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Clips a live channel.](ref:cliplivechannel)
+> For more information about the API call used go to [Clip Live Channel](https://developer.nomad-cms.com/docs/clip-live-channel)
 
 ## Next Event
 
@@ -68,7 +68,7 @@ To get the next event of a channel, enter get next into the prompt. Then enter t
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets the next event.](ref:nextevent)
+> For more information about the API call used go to [Get Next Event](https://developer.nomad-cms.com/docs/get-next-event)
 
 ## Start Output Tracking
 
@@ -78,7 +78,7 @@ To start output tracking, enter start tracking into the prompt, Then enter the i
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Starts output tracking.](ref:startoutputtracking)
+> For more information about the API call used go to [Start Output Tracking](https://developer.nomad-cms.com/docs/start-output-tracking)
 
 ## Update Live Channel
 
@@ -88,7 +88,7 @@ To update a live channel, enter update channel into the prompt. Then enter the i
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Updates a live channel.](ref:updatelivechannel)
+> For more information about the API call used go to [Update Live Channel](https://developer.nomad-cms.com/docs/update-live-channel)
 
 ## Start Live Channel
 
@@ -98,7 +98,7 @@ To start a live channel, enter start channel into the prompt. Then enter the id 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Starts a live channel.](ref:startlivechannel)
+> For more information about the API call used go to [Start Live Channel](https://developer.nomad-cms.com/docs/start-live-channel)
 
 ## Stop Live Channel
 
@@ -108,7 +108,7 @@ To stop a live channel, enter stop channel into the prompt. Then enter the id of
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Stops a live channel.](ref:stoplivechannel)
+> For more information about the API call used go to [Stop Live Channel](https://developer.nomad-cms.com/docs/stop-live-channel)
 
 ## Delete Live Channel
 
@@ -118,7 +118,7 @@ To delete a live channel, enter delete channel when prompted. Then enter the cha
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a live channel.](ref:deletelivechannel)
+> For more information about the API call used go to [Delete Live Channel](https://developer.nomad-cms.com/docs/delete-live-channel)
 
 ## Add Asset Schedule Event
 
@@ -128,7 +128,7 @@ To add an asset schedule event to a channel, enter add event into the prompt. Th
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds an asset schedule event.](ref:addassetscheduleevent)
+> For more information about the API call used go to [Add Asset Schedule Event](https://developer.nomad-cms.com/docs/add-asset-schedule-event)
 
 ## Get Asset Schedule Event
 
@@ -138,7 +138,7 @@ To get an asset schedule event, enter get event into the prompt. Then enter the 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets an asset schedule event.](ref:getassetscheduleevent)
+> For more information about the API call used go to [Get Asset Schedule Event](https://developer.nomad-cms.com/docs/get-asset-schedule-event)
 
 ## Update Asset Schedule Event
 
@@ -148,7 +148,7 @@ To update an asset schedule event, enter update event when prompted. Then enter 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Updates an asset schedule event.](ref:updateassetscheduleevent)
+> For more information about the API call used go to [Update Asset Schedule Event](https://developer.nomad-cms.com/docs/update-asset-schedule-event)
 
 ## Remove Asset Schedule Event
 
@@ -158,7 +158,7 @@ To remove an asset schedule event, enter remove event into the prompt. Then ente
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Removes an asset schedule event.](ref:removeassetscheduleevent)
+> For more information about the API call used go to [Remove Asset Schedule Event](https://developer.nomad-cms.com/docs/remove-asset-schedule-event)
 
 ## Move Schedule Event
 
@@ -166,7 +166,7 @@ To remove an asset schedule event, enter remove event into the prompt. Then ente
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Moves a schedule event.](ref:movescheduleevent)
+> For more information about the API call used go to [Move Schedule Event](https://developer.nomad-cms.com/docs/move-schedule-event)
 
 ## Get Live Inputs
 
@@ -176,7 +176,7 @@ To get all live input, enter get inputs into the prompt.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets live inputs.](ref:getliveinputs)
+> For more information about the API call used go to [Gets Live Inputs](https://developer.nomad-cms.com/docs/get-live-inputs)
 
 ## Get Live Input
 
@@ -186,7 +186,7 @@ To get a live input, enter get input into the prompt. Then enter the id of the i
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a live input.](ref:getliveinput)
+> For more information about the API call used go to [Get Live Input](https://developer.nomad-cms.com/docs/get-live-input)
 
 ## Create Live Input
 
@@ -196,7 +196,7 @@ To create a live input, enter create input when prompted. Then enter the name yo
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Creates a live input.](ref:createliveinput)
+> For more information about the API call used go to [Create Live Input](https://developer.nomad-cms.com/docs/create-live-input)
 
 ## Updating Live Input
 
@@ -206,7 +206,7 @@ To update a live input enter update input into the prompt. Then enter the id of 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Updates a live input.](ref:updateliveinput)
+> For more information about the API call used go to [Update Live Input](https://developer.nomad-cms.com/docs/update-live-input)
 
 ## Add Live Input Schedule Event
 
@@ -216,27 +216,27 @@ To add a live input to a live channel, enter add input into the prompt. Then ent
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds an input schedule event.](ref:addinputscheduleevent)
+> For more information about the API call used go to [Add Input Schedule Event](https://developer.nomad-cms.com/docs/add-input-schedule-event)
 
 ## Get Live Input Schedule Event
 
-To get a live input schedule event, enter get input event when prompted. Then enter the id of the channel the input schedule event is in and the id of the input schedule event.
+To get a live input schedule event, enter get input event when prompted. Then enter the id of the channel the input schedule event is in and the id of the input Schedule Event
 
 ![](images/get-live-input-schedule-event.png)
 
 > 📘 Note
 > 
-> For more information about the API call used go to  [Gets an input schedule event.](ref:getinputscheduleevent)
+> For more information about the API call used go to  [Get Input Schedule Event](https://developer.nomad-cms.com/docs/get-input-schedule-event)
 
 ## Update Live Input Schedule Event
 
-To update a live input schedule event, enter update input event when prompted. Then enter the id of the channel the input schedule event is in and the id of the input schedule event. Then enter the data you want to update.
+To update a live input schedule event, enter update input event when prompted. Then enter the id of the channel the input schedule event is in and the id of the input Schedule Event Then enter the data you want to update.
 
 ![](images/update-live-input-schedule-event.png)
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Updates an input schedule event.](ref:updateinputscheduleevent)
+> For more information about the API call used go to [Update Input Schedule Event](https://developer.nomad-cms.com/docs/update-input-schedule-event)
 
 ## Remove Live Input Schedule Event
 
@@ -246,7 +246,7 @@ To remove a live input schedule event, enter remove input when prompted. Then en
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Removes an input schedule event.](ref:removeinputscheduleevent)
+> For more information about the API call used go to [Remove Input Schedule Event](https://developer.nomad-cms.com/docs/remove-input-schedule-event)
 
 ## Delete Live Input
 
@@ -256,7 +256,7 @@ To delete a live input, enter delete input when prompted. Then enter the id of t
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a live input.](ref:deleteliveinput)
+> For more information about the API call used go to [Delete Live Input](https://developer.nomad-cms.com/docs/delete-live-input)
 
 ## Get Live Output Profiles
 
@@ -266,7 +266,7 @@ To get all live output profiles, enter get outputs into the prompt.
 
 > 📘 Note
 >
-> For more information about the API call used go to [Gets live outputs.](ref:getliveoutputs)
+> For more information about the API call used go to [Gets Live Outputs](https://developer.nomad-cms.com/docs/get-live-outputs)
 
 ## Get Live Output Profile
 
@@ -276,7 +276,7 @@ To get a live output profile, enter get output into the prompt. Then enter the i
 
 > 📘 Note
 >
-> For more information about the API call used go to [Gets a live output.](ref:getliveoutput)
+> For more information about the API call used go to [Get Live Output](https://developer.nomad-cms.com/docs/get-live-output)
 
 ## Get Live Output Types
 
@@ -286,7 +286,7 @@ To get all live output types, enter get output types into the prompt.
 
 > 📘 Note
 >
-> For more information about the API call used go to [Gets live output types.](ref:getliveoutputtypes)
+> For more information about the API call used go to [Get Live Output Types](https://developer.nomad-cms.com/docs/get-live-output-types)
 
 ## Create Live Output Profile
 
@@ -296,7 +296,7 @@ To create a live output profile, enter create output when prompted. Then enter t
 
 > 📘 Note
 >
-> For more information about the API call used go to [Creates a live output.](ref:createliveoutput)
+> For more information about the API call used go to [Create Live Output](https://developer.nomad-cms.com/docs/create-live-output)
 
 ## Update Live Output Profile
 
@@ -306,7 +306,7 @@ To udpate a live output profile, enter update output when prompted. Then fill in
 
 > 📘 Note
 >
-> For more information about the API call used go to [Updates a live output.](ref:updateliveoutput)
+> For more information about the API call used go to [Update Live Output](https://developer.nomad-cms.com/docs/update-live-output)
 
 ## Delete Live Output Profile
 
@@ -316,7 +316,7 @@ To delete a live output profile, enter delete output when prompted. Then enter t
 
 > 📘 Note
 >
-> For more information about the API call used go to [Deletes a live output.](ref:deleteliveoutput)
+> For more information about the API call used go to [Delete Live Output](https://developer.nomad-cms.com/docs/delete-live-output)
 
 ## Get Live Output Profile Groups
 
@@ -326,7 +326,7 @@ To get all live output profile groups, enter get output groups into the prompt.
 
 > 📘 Note
 >
-> For more information about the API call used go to [Gets live output groups.](ref:getliveoutputgroups)
+> For more information about the API call used go to [Get Live Output Groups](https://developer.nomad-cms.com/docs/get-live-output-groups)
 
 ## Get Live Output Profile Group
 
@@ -336,7 +336,7 @@ To get a live output profile group, enter get output group when prompted. Then e
 
 > 📘 Note
 >
-> For more information about the API call used go to [Gets a live output group.](ref:getliveoutputgroup)
+> For more information about the API call used go to [Get Live Output Group](https://developer.nomad-cms.com/docs/get-live-output-group)
 
 ## Create Live Output Profile Group
 
@@ -346,7 +346,7 @@ To create a live output profile group, enter create output group when prompted. 
 
 > 📘 Note
 >
-> For more information about the API call used go to [Creates a live output group.](ref:createliveoutputgroup)
+> For more information about the API call used go to [Create Live Output Group](https://developer.nomad-cms.com/docs/create-live-output-group)
 
 ## Update Live Output Profile Group
 
@@ -356,7 +356,7 @@ To update a live output profile group, enter update output group when prompted. 
 
 > 📘 Note
 >
-> For more information about the API call used go to [Updates a live output group.](ref:updateliveoutputgroup)
+> For more information about the API call used go to [Update Live Output Group](https://developer.nomad-cms.com/docs/update-live-output-group)
 
 ## Delete Live Output Profile Group
 
@@ -366,7 +366,7 @@ To delete a live output profile group, enter delete output group when prompted. 
 
 > 📘 Note
 >
-> For more information about the API call used go to [Deletes a live output group.](ref:deleteliveoutputgroup)
+> For more information about the API call used go to [Delete Live Output Group](https://developer.nomad-cms.com/docs/delete-live-output-group)
 
 ## Get Live Operators
 
@@ -376,7 +376,7 @@ To get all live operators, enter get operators into the prompt.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets live operators.](ref:getliveoperators)
+> For more information about the API call used go to [Get Live Operators](https://developer.nomad-cms.com/docs/get-live-operators)
 
 ## Get Live Operator
 
@@ -386,7 +386,7 @@ To get a specific live operator, enter get operator into the prompt. Then enter 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a live operator.](ref:getliveoperator)
+> For more information about the API call used go to [Get Live Operator](https://developer.nomad-cms.com/docs/get-live-operator)
 
 ## Start Broadcast
 
@@ -396,7 +396,7 @@ To start a broadcast, enter start broadcast when prompted. Then enter the id of 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Starts a broadcast.](ref:startbroadcast)
+> For more information about the API call used go to [Start Broadcast](https://developer.nomad-cms.com/docs/start-broadcast)
 
 ## Cancel Broadcast
 
@@ -406,7 +406,7 @@ To cancel a broadcast, enter cancel broadcast when prompted. Then enter the id o
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Cancels a Broadcast](ref:post_admin-liveoperator-liveoperatorid-cancel)
+> For more information about the API call used go to [Cancel Broadcast](https://developer.nomad-cms.com/docs/cancel-broadcast)
 
 ## Stop Broadcast
 
@@ -416,7 +416,7 @@ To stop a broadcast, enter stop broadcast when prompted. Then enter the id of th
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Stops a Broadcast](ref:post_admin-liveoperator-liveoperatorid-stop)
+> For more information about the API call used go to [Stop Broadcast](https://developer.nomad-cms.com/docs/stop-broadcast)
 
 ## Get Completed Segments
 
@@ -426,7 +426,7 @@ To get all completed segments, enter get segments when prompted. Then enter the 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets complete segments.](ref:getcompletesegments)
+> For more information about the API call used go to [Get Complete Segments](https://developer.nomad-cms.com/docs/get-complete-segments)
 
 ## Start Segment
 
@@ -436,7 +436,7 @@ To start a segment, enter start segment when prompted. Then enter the id of the 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Starts a segment.](ref:startsegment)
+> For more information about the API call used go to [Start Segment](https://developer.nomad-cms.com/docs/start-segment)
 
 ## Cancel Segment
 
@@ -446,7 +446,7 @@ To cancel a segment, enter cancel segment when prompted. Then enter the id of th
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Cancels a segment.](ref:cancelsegment)
+> For more information about the API call used go to [Cancel Segment](https://developer.nomad-cms.com/docs/cancel-segment)
 
 ## Complete Segment
 
@@ -456,4 +456,4 @@ To complete a segment, enter complete segment when prompted. Then enter the ids 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Completes a segment.](ref:completesegment)
+> For more information about the API call used go to [Complete Segment](https://developer.nomad-cms.com/docs/complete-segment)

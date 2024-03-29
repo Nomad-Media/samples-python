@@ -19,7 +19,7 @@ To create a media builder, enter 1 when propmted. Then enter the name you want t
 
 > 📘 Note
 >
-> For more information on the API used, go to [Create Media Builder](https://developer.nomad-cms.com/reference/post_mediabuilder).
+> For more information on the API used, go to [Create Media Builder](https://developer.nomad-cms.com/docs/create-media-builder).
 
 ## Create Media Builder Item
 
@@ -29,7 +29,7 @@ To create a media builder item, enter 2 when propmted. Then enter the id media b
 
 > 📘 Note
 >
-> For more information about the API call used, go to [Create Media Builder Item](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-items).
+> For more information about the API call used, go to [Create Media Builder Item](https://developer.nomad-cms.com/docs/create-media-builder-item).
 
 ## Create Media Builder Items Add Annotations
 
@@ -39,7 +39,7 @@ To create media builder items from an asset using its annotations, enter 3 when 
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Create Media Builder Item Add Annotations](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-items-sourceassetid-add-annotations).
+> For more information on the API call used, go to [Create Media Builder Item Add Annotations](https://developer.nomad-cms.com/docs/create-media-builder-items-add-annotation).
 
 ## Create Media Builder Items Bulk
 
@@ -49,7 +49,7 @@ To create media builder items in bulk, enter 4 when propmted. Then enter the id 
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Create Media Builder Items Bulk](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-items-bulk).
+> For more information on the API call used, go to [Create Media Builder Items Bulk](https://developer.nomad-cms.com/docs/create-media-builder-item-bulk).
 
 ## Delete Media Builder
 
@@ -59,7 +59,7 @@ To delete a media builder, enter 5 when propmted. Then enter the id of the media
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Delete Media Builder](https://developer.nomad-cms.com/reference/delete_mediabuilder-mediabuilderid).
+> For more information on the API call used, go to [Delete Media Builder](https://developer.nomad-cms.com/docs/delete-media-builder).
 
 ## Delete Media Builder Item
 
@@ -69,7 +69,7 @@ To delete a media builder item, enter 6 when propmted. Then enter the id of the 
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Delete Media Builder Item](https://developer.nomad-cms.com/reference/delete_mediabuilder-mediabuilderid-items-itemid).
+> For more information on the API call used, go to [Delete Media Builder Item](https://developer.nomad-cms.com/docs/delete-media-builder-item).
 
 ## Duplicate Media Builder
 
@@ -79,7 +79,7 @@ To duplicate a media builder, enter 7 when propmted. Then enter the id of the me
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Duplicate Media Builder](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-duplicate).
+> For more information on the API call used, go to [Duplicate Media Builder](https://developer.nomad-cms.com/docs/duplicate-media-builder).
 
 ## Get Media Builder
 
@@ -89,7 +89,7 @@ To get a media builder, enter 8 when propmted. Then enter the id of the media bu
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Get Media Builder](https://developer.nomad-cms.com/reference/get_mediabuilder-mediabuilderid).
+> For more information on the API call used, go to [Get Media Builder](https://developer.nomad-cms.com/docs/get-media-builder).
 
 ## Get Media Builders
 
@@ -99,7 +99,7 @@ To get all media builders, enter 9 when propmted.
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Get Media Builders](https://developer.nomad-cms.com/reference/get_mediabuilder).
+> For more information on the API call used, go to [Get Media Builders](https://developer.nomad-cms.com/docs/get-media-builders).
 
 ## Get Media Builder Ids from an Asset
 
@@ -109,7 +109,7 @@ To get the media builder ids from an asset, enter 14 when propmted. Then enter t
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Get Media Builder Ids from an asset](https://developer.nomad-cms.com/reference/get_mediabuilder-idsbysource-sourceassetid).
+> For more information on the API call used, go to [Get Media Builder Ids from an asset](https://developer.nomad-cms.com/docs/get-media-builder-ids-from-an-asset).
 
 ## Get Media Builder Items
 
@@ -119,7 +119,7 @@ To get all media builder items from a media builder, enter 10 when propmted. The
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Get Media Builder Items](https://developer.nomad-cms.com/reference/get_mediabuilder-mediabuilderid-items).
+> For more information on the API call used, go to [Get Media Builder Items](https://developer.nomad-cms.com/docs/get-media-builder-items).
 
 ## Move Media Builder Items
 
@@ -129,7 +129,7 @@ To a move media builder item within a media builder, enter 11 when propmted. The
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Move Media Builder Items](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-items-itemid-move).
+> For more information on the API call used, go to [Move Media Builder Items](https://developer.nomad-cms.com/docs/move-media-builder-item).
 
 ## Render Media Builder
 
@@ -139,7 +139,7 @@ To render a media builder, enter 12 when propmted. Then enter the id of the medi
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Render Media Builder](https://developer.nomad-cms.com/reference/post_mediabuilder-mediabuilderid-render).
+> For more information on the API call used, go to [Render Media Builder](https://developer.nomad-cms.com/docs/render-media-builder).
 
 ## Update Media Builder
 
@@ -149,4 +149,4 @@ To update a media builder, enter 13 when propmted. Then enter the id of the medi
 
 > 📘 Note
 >
-> For more information on the API call used, go to [Update Media Builder](https://developer.nomad-cms.com/reference/put_mediabuilder-mediabuilderid).
+> For more information on the API call used, go to [Update Media Builder](https://developer.nomad-cms.com/docs/update-media-builder).

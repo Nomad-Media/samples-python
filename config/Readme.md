@@ -18,7 +18,7 @@ To clear the server cache, enter clear when prompted.
 
 > 📘 Note
 > 
-> For more information about the API calls used go to  [Clears the server cache.](ref:clearservercache)
+> For more information about the API calls used go to  [Clear Server Cache](https://developer.nomad-cms.com/docs/clear-server-cache)
 
 ## Get Config
 
@@ -28,7 +28,7 @@ To get the current config enter config when prompted. Then enter the type of con
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets the config.](ref:getconfig)
+> For more information about the API calls used go to [Get Config](https://developer.nomad-cms.com/docs/get-config)
 
 ## Get Server Time
 
@@ -38,4 +38,4 @@ To get the current server time, enter time when prompted.
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets the server time.](ref:getservertime-1)
+> For more information about the API calls used go to [Get Server Time](https://developer.nomad-cms.com/docs/get-server-time)

@@ -14,7 +14,7 @@ To learn how to download and setup the nomad sdk pip, go to [Nomad SDK PIP](http
 
 ## Introduction
 
-For this walkthrough we are assuming you read and understand the concepts and terminology explained in [Content Definitions](doc:content-definitions).
+For this walkthrough we are assuming you read and understand the concepts and terminology explained in [Content Definitions](https://developer.nomad-cms.com/docs/content-definitions).
 
 ## Creating the Movie content definition
 

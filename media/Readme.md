@@ -18,7 +18,7 @@ To clear continue watching data, enter 1 when prompted. Then enter the id of the
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Clear Continue Watching](doc:clear-continue-watching)
+> For more information about the API call used got to [Clear Continue Watching](https://developer.nomad-cms.com/docs/clear-continue-watching)
 
 ## Clear Watchlist
 
@@ -28,17 +28,17 @@ To clear watchlist data, enter 2 when prompted. Then enter the id of the user th
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Clear Watchlist](doc:clear-watchlist)
+> For more information about the API call used got to [Clear Watchlist](https://developer.nomad-cms.com/docs/clear-watchlist)
 
 ## Create Form
 
-Before you make a form, you need to create the content definition where you want to post records too first. Follow the instructions [here](doc:content-definitions) on how to create a content definition and find its ID. To make a form enter 3 when prompted. Then enter the id of the content definition you want to use, the first and last name, whether you want it to be active or not, the start date, and the description.
+To make a form enter 3 when prompted. Then enter the id of the content definition you want to use, the first and last name, whether you want it to be active or not, the start date, and the description.
 
 ![](images/create-form.png)
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Forms](doc:forms)
+> For more information about the API call used got to [Create Form](https://developer.nomad-cms.com/docs/create-form)
 
 ## Get Content Cookies.
 
@@ -48,7 +48,7 @@ To get content cookies, enter 4. Then enter the id of the content the cookies ar
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Content Cookies](doc:get-content-cookies)
+> For more information about the API call used got to [Get Content Cookies](https://developer.nomad-cms.com/docs/get-content-cookies)
 
 ## Get Default Site Config
 
@@ -58,7 +58,7 @@ To get the default site config, enter 5 when prompted.
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Default Site Config](doc:get-default-site-config)
+> For more information about the API call used got to [Get Default Site Config](https://developer.nomad-cms.com/docs/get-default-site-config)
 
 ## Get Dynamic Content
 
@@ -68,7 +68,7 @@ To get a dynamic content, enter 6 when prompted. Then enter the id of the dynami
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Dynamic Content](doc:get-dynamic-content)
+> For more information about the API call used got to [Get Dynamic Content](https://developer.nomad-cms.com/docs/get-dynamic-content)
 
 ## Get Dynamic Contents
 
@@ -78,7 +78,7 @@ To get all dynamic contents, enter 7 when prompted.
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Dynamic Contents](doc:get-dynamic-contents)
+> For more information about the API call used got to [Get Dynamic Contents](https://developer.nomad-cms.com/docs/get-dynamic-contents)
 
 ## Get Media Group
 
@@ -88,7 +88,7 @@ To get a media group, enter 8 when prompted. Then enter the id of the media grou
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Media Group](ref:get_media-group-id)
+> For more information about the API call used got to [Get Media Group](https://developer.nomad-cms.com/docs/get-media-group)
 
 ## Get Media Item
 
@@ -98,7 +98,7 @@ To get a media item, enter 9 when prompted. Then enter the id of the media item 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Media Item](ref:get_media-item-id)
+> For more information about the API call used got to [Get Media Item](https://developer.nomad-cms.com/docs/get-media-item)
 
 ## Get My Content
 
@@ -108,7 +108,7 @@ To get your content, enter 10 when prompted.
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get My Content](ref:get_media-my-content)
+> For more information about the API call used got to [Get My Content](https://developer.nomad-cms.com/docs/get-my-content)
 
 ## Get My Group
 
@@ -118,7 +118,7 @@ To get your group, enter 11 when prompted. Then enter the id of the group you wa
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get My Group](doc:get-my-group)
+> For more information about the API call used got to [Get My Group](https://developer.nomad-cms.com/docs/get-my-group)
 
 ## Get Site Config
 
@@ -128,7 +128,7 @@ To get a site config, enter 12 when prompted. Then enter the site config record 
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Get Site Config](doc:get-site-config)
+> For more information about the API call used got to [Get Site Config](https://developer.nomad-cms.com/docs/get-site-config)
 
 ## Media Search
 
@@ -138,4 +138,4 @@ To perform a media search, enter 13 when prompted. Then enter the search query y
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Media Search](doc:search-1)
+> For more information about the API call used got to [Media Search](https://developer.nomad-cms.com/docs/media-search)

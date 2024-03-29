@@ -12,7 +12,7 @@ To create a movie enter create when prompted. Then enter the title, plot, releas
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Creates a content.](ref:createcontent)
+> For more information about the API calls used go to [Create Content](https://developer.nomad-cms.com/docs/create-content)
 
 ## Update Movie
 
@@ -22,7 +22,7 @@ To update the movie, enter update when prompted. Then it is the same process as 
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Updates a content.](ref:updatecontent)
+> For more information about the API calls used go to [Update Content](https://developer.nomad-cms.com/docs/update-content)
 
 ## Search Movie
 
@@ -34,7 +34,7 @@ To search for a movie, enter search when prompted. Then you will be asked if you
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Search.](ref:search-3)
+> For more information about the API calls used go to [Search](https://developer.nomad-cms.com/docs/search-api)
 
 ## Delete Movie
 
@@ -44,4 +44,4 @@ To delete a movie, enter delete when prompted. Then you will be asked the id of 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a content.](ref:deletecontent)
+> For more information about the API call used go to [Delete Content](https://developer.nomad-cms.com/docs/delete-content)

@@ -10,10 +10,6 @@
 
 To learn how to download and setup the nomad sdk pip, go to [Nomad SDK PIP](https://github.com/Nomad-Media/nomad-sdk/tree/main/nomad-sdk-pip).
 
-## Content ID
-
-To get the content id of the video or image of the movie you want to add the metadata to, use the movie search function here [Movies](doc:upload-movies).
-
 ## Add Tag or Collection
 
 To add a tag or collection to a content enter add tag/collection when prompted. Then, enter whether you want to create a tag or collection by inputting tag or collection. Next, enter the content id of the asset you add, the content definition, and the name of the tag/collection. Finally enter the tag id and false for creating a new tag/collection if you want to add an existing tag or collection or leave the tag id blank and true for creating a new tag/collection.
@@ -22,7 +18,7 @@ To add a tag or collection to a content enter add tag/collection when prompted. 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds a tag or collection to a content.](ref:addtagorcollection)
+> For more information about the API call used go to [Add Tag or Collection](https://developer.nomad-cms.com/docs/add-tag-or-collection)
 
 ## Create Tag or Collection
 
@@ -32,7 +28,7 @@ To create a tag or collection, enter create tag/collection when prompted. Then e
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Creates a tag or collection.](ref:createtagorcollection)
+> For more information about the API call used go to [Create Tag or Collection](https://developer.nomad-cms.com/docs/create-tag-or-collection)
 
 ## Get Tag or Collection
 
@@ -42,7 +38,7 @@ To get a tag or collection, enter whether you want to get a tag or collection, a
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a tag or collection.](ref:gettagorcollection)
+> For more information about the API call used go to [Get Tag or Collection](https://developer.nomad-cms.com/docs/get-tag-or-collection)
 
 ## Remove Tag or Collection
 
@@ -52,7 +48,7 @@ To remove a tag or collection from a content, enter remove tag/collection. Then 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Removes a tag or collection from a content.](ref:removetagorcollection)
+> For more information about the API call used go to [Remove Tag or Collection](https://developer.nomad-cms.com/docs/remove-tag-or-collection)
 
 ## Delete Tag or Collection
 
@@ -62,7 +58,7 @@ To delete a tag or collection enter delete tag/collection when prompted. Then, e
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a tag or collection from a content.](ref:deletetagorcollection)
+> For more information about the API call used go to [Delete Tag or Collection](https://developer.nomad-cms.com/docs/delete-tag-or-collection)
 
 ## Add Related Content
 
@@ -72,7 +68,7 @@ For this example we are going to add the image in our movie as the related conte
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds related content to a content.](ref:addrelatedcontent)
+> For more information about the API call used go to [Add Related Content](https://developer.nomad-cms.com/docs/add-related-content)
 
 ## Delete Related Content
 
@@ -82,7 +78,7 @@ To delete the related content made in the example above, enter the content id of
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes related content from a content.](ref:deleterelatedcontent)
+> For more information about the API call used go to [Delete Related Content](https://developer.nomad-cms.com/docs/delete-related-content)
 
 ## Bulk Update
 
@@ -92,4 +88,4 @@ To update metadata in bulk enter bulk. Then enter the id(s) of the content(s) yo
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Bulk updates the metadata of a content.](ref:bulkupdatemetadata)
+> For more information about the API call used go to [Bulk Update Metadata](https://developer.nomad-cms.com/docs/bulk-update-metadata)

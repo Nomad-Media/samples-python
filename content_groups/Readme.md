@@ -18,7 +18,7 @@ To get a specific content group, enter get group into the terminal. It will then
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets a content group.](ref:getcontentgroup)
+> For more information about the API calls used go to [Get Content Group](https://developer.nomad-cms.com/docs/get-content-group)
 
 ## Get Content Groups
 
@@ -28,7 +28,7 @@ To get your content groups and the content groups shared with you, enter get gro
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets content groups.](ref:getcontentgroups)
+> For more information about the API calls used go to [Get Content Groups](https://developer.nomad-cms.com/docs/get-content-groups)
 
 ## Create Content Group
 
@@ -38,7 +38,7 @@ To create a content group, enter create into the terminal. Then you will be prom
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Creates a content group.](ref:createcontentgroup)
+> For more information about the API calls used go to [Create Content Group](https://developer.nomad-cms.com/docs/create-content-group)
 
 ## Add Content to Content Group
 
@@ -48,7 +48,7 @@ To add content to a content group, enter add into the terminal. Then you will be
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Adds content to a content group.](ref:addcontenttocontentgroup)
+> For more information about the API calls used go to [Add Content to Content Group](https://developer.nomad-cms.com/docs/add-contents-to-content-group)
 
 ## Remove Content from Content Group
 
@@ -58,7 +58,7 @@ To remove content from a content group, enter remove into the terminal. Then you
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Removes contents from content group.](ref:removecontentsfromcontentgroups)
+> For more information about the API calls used go to [Remove Content From Content Group](https://developer.nomad-cms.com/docs/remove-contents-from-content-group)
 
 ## Rename Content Group
 
@@ -68,9 +68,9 @@ To rename  group, enter rename into the terminal. Then you will be prompted for 
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Renames a content group.](ref:renamecontentgroup)
+> For more information about the API calls used go to [Rename Content Group](https://developer.nomad-cms.com/docs/rename-content-group)
 
-## Share Content Group
+## Share Content Group with User
 
 To start sharing a content group with another user, enter start sharing into the terminal. Then enter the content group id for the content. You will then be asked for the user id of the user you want to share the content with. When you enter the user id, you will be prompted if you want to enter another user id. Enter y to keep on entering user ids and n to continue. Only the owner of the content group can share the content group with other users.
 
@@ -78,9 +78,9 @@ To start sharing a content group with another user, enter start sharing into the
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Shares a content group.](ref:sharecontentgroup)
+> For more information about the API calls used go to [Share Content Group](https://developer.nomad-cms.com/docs/share-content-group)
 
-## Stop Sharing Content Group
+## Stop Sharing Content Group with User
 
 To stop sharing a content group with another user, enter stop sharing into the terminal. Then enter the content group id for the content. You will then be asked for the user id of the user you want to stop sharing the content with. When you enter the user id, you will be prompted if you want to enter another user id. Enter y to keep on entering user ids and n to continue. Only the owner of the content group can stop sharing the content group with other users.
 
@@ -88,7 +88,7 @@ To stop sharing a content group with another user, enter stop sharing into the t
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Stops sharing a content group.](ref:stopsharingcontentgroup)
+> For more information about the API calls used go to [Stop Sharing Content Group](https://developer.nomad-cms.com/docs/stop-sharing-content-group)
 
 ## Get Portal Groups
 
@@ -98,7 +98,7 @@ To get the portal groups, enter get portal into the terminal. Then enter the nam
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets portal groups.](ref:getportalgroups)
+> For more information about the API calls used go to [Get Portal Groups](https://developer.nomad-cms.com/docs/get-portal-groups)
 
 ## Delete Content Group
 
@@ -108,4 +108,4 @@ To delete an content group, enter delete into the terminal. Then you will be pro
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a content group.](ref:deletecontentgroup)
+> For more information about the API calls used go to [Delete Content Group](https://developer.nomad-cms.com/docs/delete-content-group)

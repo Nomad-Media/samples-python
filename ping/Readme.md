@@ -18,4 +18,4 @@ To ping a user, enter 1 when prompted. Then, optionally, enter the application i
 
 > 📘 Note
 > 
-> For more information about the API call used got to [Pings the server.](ref:ping-3)
+> For more information about the API call used got to [Ping User](https://developer.nomad-cms.com/docs/ping-user)

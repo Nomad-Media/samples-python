@@ -18,4 +18,4 @@ To search, enter the information in the parameters you want to use to search.
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Search](ref:search-2)
+> For more information about the API calls used go to [Search](https://developer.nomad-cms.com/docs/search-api)

@@ -26,7 +26,7 @@ Respond with "y" to the prompt "Did you receive a 6 digit code" if you got the e
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Registers a user.](ref:register-1) [Verifies a user.](ref:verify-1)
+> For more information about the API calls used go to [Register](https://developer.nomad-cms.com/docs/register) [Verify](https://developer.nomad-cms.com/docs/verify)
 
 ## Resend Code
 
@@ -38,4 +38,4 @@ If an email didn't get sent to you respond with"n" to the prompt "Did you receiv
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Resends a code.](ref:resendcode)
+> For more information about the API call used go to [Resend Code](https://developer.nomad-cms.com/docs/resend-code)

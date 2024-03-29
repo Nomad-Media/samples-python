@@ -18,7 +18,7 @@ To add a saved search enter 1 when prompted. Then enter the information you want
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Adds a saved search.](ref:addsavedsearch)
+> For more information about the API call used go to [Add Saved Search](https://developer.nomad-cms.com/docs/add-saved-search)
 
 ## Delete Saved Search
 
@@ -28,7 +28,7 @@ To delete a saved search, enter 2 when prompted. Then enter the id of the saved 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Deletes a saved search.](ref:deletesavedsearch)
+> For more information about the API call used go to [Delete Saved Search](https://developer.nomad-cms.com/docs/delete-saved-search)
 
 ## Get Saved Search
 
@@ -38,7 +38,7 @@ To get a saved search, enter 3 when prompted. Then enter the id of the saved sea
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets a saved search.](ref:getsavedsearch)
+> For more information about the API call used go to [Get Saved Search](https://developer.nomad-cms.com/docs/get-saved-search)
 
 ## Get Saved Searches
 
@@ -48,7 +48,7 @@ To get all saved searches, enter 4 when prompted.
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets saved searches.](ref:getsavedsearches)
+> For more information about the API call used go to [Get Saved Searches](https://developer.nomad-cms.com/docs/get-saved-searches)
 
 ## Get Search Saved
 
@@ -58,7 +58,7 @@ To get the search saved, enter 5 when prompted. Then enter the parameters of the
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Gets search saved.](ref:getsearchsaved)
+> For more information about the API call used go to [Get Search Saved](https://developer.nomad-cms.com/docs/get-search-saved)
 
 ## Get Search Saved By Id
 
@@ -68,7 +68,7 @@ To get a search saved by id, enter 6 when prompted. Then enter the id of the sea
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Get Search Saved By Id](doc:get-search-saved-by-id)
+> For more information about the API call used go to [Get Search Saved By Id](https://developer.nomad-cms.com/docs/get-search-saved-by-id)
 
 ## Patch Saved Search
 
@@ -78,7 +78,7 @@ To patch a saved search, enter 7 when prompted. Then enter the id of the saved s
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Patches a saved search.](ref:patchsavedsearch)
+> For more information about the API call used go to [Patche Saved Search](https://developer.nomad-cms.com/docs/patch-saved-search)
 
 ## Update Saved Search
 
@@ -88,4 +88,4 @@ To update a saved search, enter 8 when prompted. Then enter the id of the saved 
 
 > 📘 Note
 > 
-> For more information about the API call used go to [Updates a saved search.](ref:updatesavedsearch)
+> For more information about the API call used go to [Update Saved Search](https://developer.nomad-cms.com/docs/update-saved-search)

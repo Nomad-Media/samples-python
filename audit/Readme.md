@@ -18,4 +18,4 @@ To get an audit, enter the id of the content you want to get an audit of.
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Gets the audit.](ref:getaudit)
+> For more information about the API calls used go to [Get Audit](https://developer.nomad-cms.com/docs/get-audit)

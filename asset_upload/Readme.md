@@ -18,7 +18,7 @@ To upload a file, enter 1 when promted. Then enter the display name for your ass
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Asset Upload](https://developer.nomad-cms.com/docs/start-asset-upload)
+> For more information about the API calls used go to [Asset Upload](https://developer.nomad-cms.com/docs/upload-asset-sdk)
 
 ## Upload Related Asset
 
@@ -28,4 +28,4 @@ To upload a file as a related asset, enter 2 when promted. Then enter the id of 
 
 > 📘 Note
 >
-> For more information about the API calls used go to [Related Asset Upload](https://developer.nomad-cms.com/docs/start-related-asset-upload)
+> For more information about the API calls used go to [Related Asset Upload](https://developer.nomad-cms.com/docs/upload-asset-sdk)

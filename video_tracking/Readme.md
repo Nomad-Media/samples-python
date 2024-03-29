@@ -30,4 +30,4 @@ To hide a user's video tracking data, enter hidden. Then enter the asset id for 
 
 > 📘 Note
 > 
-> For more information about the API calls used got to [Video Tracking Service API](doc:video-tracking-service-api)
+> For more information about the API calls used got to [Video Tracking Service API](https://developer.nomad-cms.com/docs/video-tracking-service-api)

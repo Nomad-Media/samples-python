@@ -18,7 +18,7 @@ To delete a user enter 1 for the delete_user function. Then enter the id of the 
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user.](ref:deleteuser)
+> For more information about the API calls used go to [Delete User](https://developer.nomad-cms.com/docs/delete-user)
 
 ## Delete User Content Attribute Data
 
@@ -28,7 +28,7 @@ To delete a user's content attribute data, enter 2 for the delete_user_content_a
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's content attribute data.](ref:deleteusercontentattributedata)
+> For more information about the API calls used go to [Delete User Content Attribute Data](https://developer.nomad-cms.com/docs/delete-user-content-attribute-data)
 
 ## Delete User Content Group Data
 
@@ -38,7 +38,7 @@ To delete a user's content group data, enter 3 for the delete_user_content_group
 
 > 📘 Note
 > 
-> For more information about the API calls used go to  [Deletes a user's content group data.](ref:deleteusercontentgroupdata)
+> For more information about the API calls used go to  [Delete User Content Group Data](https://developer.nomad-cms.com/docs/delete-user-content-group-data)
 
 ## Delete User Content Security Data.
 
@@ -48,7 +48,7 @@ To delete a user's content security data, enter 4 for the delete_user_content_se
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's content security data.](ref:deleteusercontentsecuritydata)
+> For more information about the API calls used go to [Delete User Content Security Data](https://developer.nomad-cms.com/docs/delete-user-content-security-data)
 
 ## Delete User Data
 
@@ -58,7 +58,7 @@ To delete a user's data, enter 5 for the delete_user_data function. Then enter t
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's data.](ref:deleteuserdata)
+> For more information about the API calls used go to [Delete User Data](https://developer.nomad-cms.com/docs/delete-user-data)
 
 ## Delete User Dislikes Data
 
@@ -68,7 +68,7 @@ To delete a user's dislike data, enter 6 for the delete_user_dislikes_data funct
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's data.](ref:deleteuserdata)
+> For more information about the API calls used go to [Delete User Data](https://developer.nomad-cms.com/docs/delete-user-dislike-userid)
 
 ## Delete User Favorites Data
 
@@ -78,7 +78,7 @@ To delete a user's favorites data, enter 7 for the delete_user_favorites_data fu
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's favorites data](ref:delete_admin-user-favorite-userid)
+> For more information about the API calls used go to [Delete User Favorites Data](https://developer.nomad-cms.com/docs/delete-user-favorites-data)
 
 ## Delete User Likes Data
 
@@ -88,7 +88,7 @@ To delete a user's likes data, enter 8 for the delete_user_likes_data function. 
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's likes data](ref:delete_admin-user-like-userid)
+> For more information about the API calls used go to [Delete User Likes Data](https://developer.nomad-cms.com/docs/delete-user-likes-data)
 
 ## Delete User Saved Search Data
 
@@ -98,7 +98,7 @@ To delete a user's saved search data, enter 9 for the delete_user_saved_search_d
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's saved search data.](ref:deleteusersavedsearchdata)
+> For more information about the API calls used go to [Delete User Saved Search Data](https://developer.nomad-cms.com/docs/delete-user-saved-search-data)
 
 ## Delete User Session Data
 
@@ -108,7 +108,7 @@ To delete a user's session data, enter 10 for the delete_user_session_data funct
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's session data.](ref:deleteusersessiondata)
+> For more information about the API calls used go to [Delete User Session Data](https://developer.nomad-cms.com/docs/delete-user-session-data)
 
 ## Delete User Video Tracking Data
 
@@ -118,4 +118,4 @@ To delete a user's video tracking data, enter 11 for the delete_user_video_track
 
 > 📘 Note
 > 
-> For more information about the API calls used go to [Deletes a user's video tracking data.](ref:deleteuservideotrackingdata)
+> For more information about the API calls used go to [Delete User Video Tracking Data](https://developer.nomad-cms.com/docs/delete-user-video-tracking-data)
