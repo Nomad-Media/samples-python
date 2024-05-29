@@ -92,7 +92,7 @@ To update metadata in bulk enter bulk. Then enter the id(s) of the content(s) yo
 
 ## Add Custom Properties
 
-To add custom properties to a content enter add custom properties when prompted. Then enter the content id of the asset you want to add custom properties to, the content definition, and the custom properties you want to add. The properties will show up under `customAttributes`.
+To add custom properties to a content enter add custom properties when prompted. Then enter the content id of the asset you want to add custom properties to, the name and date of the custom properties, and the custom properties you want to add. The properties will show up under `customAttributes`.
 
 ![](images/add-custom-properties.png)
 
