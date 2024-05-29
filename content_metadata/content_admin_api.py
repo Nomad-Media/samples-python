@@ -74,7 +74,8 @@ def delete_related_content_main():
 def add_custom_properties_main():
     try:
         ASSET_ID = input("Enter the asset id of the asset you want to add the custom property to: ")
-        DISPLAY_NAME = input("Enter the name of the asset you want to add the custom property to: ")
+        DISPLAY_NAME = input("Enter the name of the asset you want to add the custom property to: ") if input("Do you want to add a display name (y/n): ") == "y" else ""
+        DISPLAY_DATE = input("Enter the date of the asset you want to add the custom property to: ") if input("Do you want to add a display date (y/n): ") == "y" else ""
         CUSTOM_PROPERTIES = {}
         while True:
             propertyName = input("Enter the name for the property: ")
@@ -85,7 +86,7 @@ def add_custom_properties_main():
             if USER_INPUT == "n":
                 break
             
-        INFO = nomad_sdk.add_custom_properties(ASSET_ID, DISPLAY_NAME, CUSTOM_PROPERTIES)
+        INFO = nomad_sdk.add_custom_properties(ASSET_ID, DISPLAY_NAME, DISPLAY_DATE, CUSTOM_PROPERTIES)
         print(json.dumps(INFO, indent=4))
     except:
         raise Exception()
@@ -146,6 +147,8 @@ if __name__ == "__main__":
             add_related_content_main()
         elif USER_INPUT == "delete related":
             delete_related_content_main()
+        elif USER_INPUT == "add custom":
+            add_custom_properties_main()
         elif USER_INPUT == "bulk":
             bulk_update_metadata_main()
         elif USER_INPUT == "create":
