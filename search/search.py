@@ -1,4 +1,4 @@
-from nomad_media_pip.nomad_sdk import Nomad_SDK
+from nomad_media_pip.src.nomad_sdk import Nomad_SDK
 from config import config
 
 nomad_sdk = Nomad_SDK(config)
@@ -9,10 +9,10 @@ import json
 
 def search():
     try:
-        PAGE_OFFSET = input("Enter page offset: ") if input("Do you want to add a page offset (y/n): ") == "y" else ""
-        PAGE_SIZE = input("Enter page size: ") if input("Do you want to add a page size (y/n): ") == "y" else ""
+        PAGE_OFFSET = input("Enter page offset: ") if input("Do you want to add a page offset (y/n): ") == "y" else None
+        PAGE_SIZE = input("Enter page size: ") if input("Do you want to add a page size (y/n): ") == "y" else None
 
-        SEARCH_QUERY = input("Enter a search query: ") if input("Do you want to add a search query (y/n): ") == "y" else ""
+        SEARCH_QUERY = input("Enter a search query: ") if input("Do you want to add a search query (y/n): ") == "y" else None
 
         FILTER_YN = True if input("Do you want to add a filter (y/n)?: ") == "y" else False
 
@@ -50,7 +50,7 @@ def search():
             FILTER = { 
                 "fieldName": FIELD_NAME,
                 "operator": OPERATOR,
-                "value": VALUE
+                "values": VALUE
             }
 
             FILTERS.append(FILTER)
@@ -60,7 +60,7 @@ def search():
 
         SORT_FIELDS = []
         while True:
-            if input("Do you want to sort a field (y/n): ") == "y":
+            if input(f"Do you want to sort a{"nother" if len(SORT_FIELDS) > 0 else ""} field (y/n): ") == "y":
                 SORT_FIELDS_NAME = input("Enter a field name you want to sort by: ")
                 SORT_FIELDS_ORDER = input("Enter the order you want to sort the field by (ascending/descending): ")
 
@@ -83,15 +83,25 @@ def search():
                 if input("Do you want to add another search result field (y/n)?: ") != "y":
                     break
 
-        SIMILAR_ASSET_ID = input("Enter an asset id to find similar assets: ") if input("Do you want to find similar assets (y/n): ") == "y" else ""
-        MIN_SCORE = input("Enter a minimum score: ") if input("Do you want to add a minimum score (y/n): ") == "y" else ""
+        SIMILAR_ASSET_ID = input("Enter an asset id to find similar assets: ") if input("Do you want to find similar assets (y/n): ") == "y" else None
+        MIN_SCORE = input("Enter a minimum score: ") if input("Do you want to add a minimum score (y/n): ") == "y" else None
         EXCLUDE_TOTAL_RECORD_COUNT = input("Do you want to exclude the total record count (y/n): ") == "y"
-        FILTER_BINDER = input("Enter a filter binder: ") if input("Do you want to add a filter binder (y/n): ") == "y" else ""
+        FILTER_BINDER = input("Enter a filter binder: ") if input("Do you want to add a filter binder (y/n): ") == "y" else None
+        FULL_URL_FIELD_NAMES = input("Enter full url field names (separate by commas): ") if input("Do you want to add full url field names (y/n): ") == "y" else None
+        DISTINCT_ON_FIELD_NAME = input("Enter a field name to find distinct values: ") if input("Do you want to find distinct values (y/n): ") == "y" else None
+        INCLUDE_VIDEO_CLIPS = input("Do you want to include video clips (y/n): ") == "y"
+        USE_LLM_SEARCH = input("Do you want to use LLM search (y/n): ") == "y"
+        INCLUDE_INTERNAL_FIELDS_IN_RESULTS = input("Do you want to include internal fields in results (y/n): ") == "y"
+
+        FULL_URL_FIELD_NAMES = FULL_URL_FIELD_NAMES.split(",") if FULL_URL_FIELD_NAMES else None
+        if INCLUDE_INTERNAL_FIELDS_IN_RESULTS != "y": INCLUDE_INTERNAL_FIELDS_IN_RESULTS = None
 
         print("Searching")
         CONTENT = nomad_sdk.search(SEARCH_QUERY, PAGE_OFFSET, PAGE_SIZE, FILTERS, 
-                                   SORT_FIELDS, RESULT_FIELDS, SIMILAR_ASSET_ID, MIN_SCORE,
-                                   EXCLUDE_TOTAL_RECORD_COUNT, FILTER_BINDER)
+            SORT_FIELDS, RESULT_FIELDS, FULL_URL_FIELD_NAMES, DISTINCT_ON_FIELD_NAME, 
+            INCLUDE_VIDEO_CLIPS, SIMILAR_ASSET_ID, MIN_SCORE, EXCLUDE_TOTAL_RECORD_COUNT, 
+            FILTER_BINDER, USE_LLM_SEARCH, INCLUDE_INTERNAL_FIELDS_IN_RESULTS)
+        
         print(json.dumps(CONTENT, indent=4))
     except:
         raise Exception()
