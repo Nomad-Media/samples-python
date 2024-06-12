@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.realpath('./nomad-samples'))
 
-from nomad_media_pip.nomad_sdk import Nomad_SDK
+from nomad_media_pip.src.nomad_sdk import Nomad_SDK
 from config import config
 
 nomad_sdk = Nomad_SDK(config)

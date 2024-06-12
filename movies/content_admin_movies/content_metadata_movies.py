@@ -2,7 +2,7 @@ import sys, os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from nomad_media_pip.nomad_sdk import Nomad_SDK
+from nomad_media_pip.src.nomad_sdk import Nomad_SDK
 from config import config
 
 nomad_sdk = Nomad_SDK(config)
