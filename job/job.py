@@ -56,9 +56,9 @@ def create_job_id():
         externalId = get_input("external id", False)
         
         nomad_sdk.create_job_id(
-           #asset_id,
-           #job_results_url,
-           #externalId=externalId
+           asset_id,
+           job_results_url,
+           externalId=externalId
         )
         
         print("Job created successfully")
