@@ -11,6 +11,16 @@ def get_input(prompt, required):
 def get_bool(prompt):
     return True if input(f"{prompt} (y/n): ") == "y" else False
 
+def get_list(prompt, required):
+    items = []
+    if required or input(f"Do you want to add a {prompt} (y/n): ") == "y":
+        while True:
+            items.append(input(f"{prompt}: "))
+            if not required or input(f"Do you want to add another {prompt} (y/n): ") == "n":
+                break
+    
+    return items
+
 def clear_continue_watching():
     try:
         USER_ID = input(f"Enter user id: ") if input("Do you want to use another user's id (y/n): ") == "y" else None
@@ -38,13 +48,15 @@ def create_form():
         DESCRIPTION = get_input("description", True)
 
         FORMS = nomad_sdk.create_form(CONTENT_DEFINITION_ID, 
-                                        {
-                                          "firstName": FIRST_NAME, 
-                                          "lastName": LAST_NAME, 
-                                          "active": ACTIVE, 
-                                          "startDate": START_DATE, 
-                                          "description": DESCRIPTION
-                                        })
+            {
+                "firstName": FIRST_NAME, 
+                "lastName": LAST_NAME, 
+                "active": ACTIVE, 
+                "startDate": START_DATE, 
+                "description": DESCRIPTION
+            })
+        
+        print(json.dumps(FORMS, indent=4))
     except:
         raise Exception()
     
@@ -88,7 +100,9 @@ def get_media_group():
     try:
         MEDIA_GROUP_ID = get_input("media group id", True)
 
-        MEDIA_GROUP = nomad_sdk.get_media_group(MEDIA_GROUP_ID)
+        MEDIA_GROUP_FILTERS = get_list("filter", False)
+
+        MEDIA_GROUP = nomad_sdk.get_media_group(MEDIA_GROUP_ID, MEDIA_GROUP_FILTERS)
 
         print(json.dumps(MEDIA_GROUP, indent=4))
     except:
