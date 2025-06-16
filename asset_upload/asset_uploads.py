@@ -20,9 +20,10 @@ def upload_asset():
         FILE = input("Enter file path: ")
         PARENT_ID = input("Enter parent id: ") if input("Do you want to add a parent id (y/n): ") == "y" else ""
         LANGUAGE_ID = input("Enter language id: ") if input("Do you want to add a language id (y/n): ") == "y" else ""
+        UPLOAD_REPLACE_OVERWRITE_OPTIONS = input("Enter upload replace overwrite options (sepearated by comma): ").split(",").trim() if input("Do you want to add upload replace overwrite options (y/n): ") == "y" else None
     
         ASSET_INFO = nomad_sdk.upload_asset(NAME, EXISTING_ASSET_ID, RELATED_CONTENT_ID,
-                                            UPLOAD_OVERWRITE_OPTION, FILE, PARENT_ID, LANGUAGE_ID)
+            UPLOAD_OVERWRITE_OPTION, FILE, PARENT_ID, LANGUAGE_ID, UPLOAD_REPLACE_OVERWRITE_OPTIONS)
     
         print(json.dumps(ASSET_INFO, indent=4))
     except Exception as e:
