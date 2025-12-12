@@ -342,10 +342,20 @@ To update an asset ad break, enter 40 when prompted. Then enter the id of the as
 
 ## Update Asset Language
 
-To update an asset's language, enter 41 when prompted. Then enter the id of the asset you want to update the asset of and the id of the language you want to change the asset's language to.
+To update an asset's language, enter 41 when prompted. Then enter the id of the asset you want to update the language of and the id of the language you want to change the asset's language to.
 
 ![](images/update-asset-language.png)
 
 > 📘 Note
 > 
 > For more information about the API call used got to [Update Asset Language](https://developer.nomad-cms.com/docs/update-asset-language)
+
+## Update Asset Security
+
+To update an asset's security, enter 42 when propted. Then enter the id of the asset you want to update the security of, whether or not you want to inherit the security of the parent, and the security group(s) and user(s).
+
+![](images/update-asset-security.png)
+
+> 📘 Note
+> 
+> For more information about the API call used got to [Update Asset Security](https://developer.nomad-cms.com/docs/update-asset-security)

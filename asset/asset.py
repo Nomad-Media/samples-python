@@ -16,7 +16,7 @@ def get_list(prompt, keys, required):
     if required or input(f"Do you want to add {prompt} (y/n): ") == "y":
         while True:
             items.append({key: input(f"{prompt} {key}: ") for key in keys})
-            if not required or input(f"Do you want to add another {prompt} (y/n): ") == "n":
+            if input(f"Do you want to add another {prompt} (y/n): ") == "n":
                 break
     
     return items
@@ -603,6 +603,50 @@ def update_asset_language():
 
     except Exception as e:
         print(e)
+        
+def update_asset_security():
+    try:
+        content_definitions = nomad_sdk.get_content_definitions()
+        content_definitions = content_definitions["items"]
+        security_groups_content_definition_id = [cd['contentDefinitionId'] for cd in content_definitions if cd["properties"]["title"] == "Security Group"]
+        if not security_groups_content_definition_id:
+            print("No content definition with title 'Security Groups' found.")
+            return
+
+        security_groups_content_definition_id = security_groups_content_definition_id[0]
+        security_groups = _get_content_definition_content(security_groups_content_definition_id)
+        
+        security_users_content_definition_id = [cd['contentDefinitionId'] for cd in content_definitions if cd["properties"]["title"] == "User"]
+        if not security_users_content_definition_id:
+            print("No content definition with title 'Users' found.")
+            return
+
+        security_users_content_definition_id = security_users_content_definition_id[0]
+        security_users = _get_content_definition_content(security_users_content_definition_id)
+        
+        assetId = get_input("asset id", True)
+        inheritSecurity = get_bool("inherit security")
+
+        print("Available security groups:")
+        for sg in security_groups:
+            print(f"{sg['id']}: {sg['identifiers']['title']}")
+        securityGroups = get_list("security group", ["id"], False)
+        
+        print("Available security users:")
+        for su in security_users:
+            print(f"{su['id']}: {su['identifiers']['email']}")
+        securityUsers = get_list("security user", ["id"], False)
+        
+        RESPONSE = nomad_sdk.update_asset_security(assetId, inheritSecurity, securityGroups, securityUsers)
+        
+        print(json.dumps(RESPONSE, indent=4))
+    except Exception as e:
+        print(e)
+        
+def _get_content_definition_content(content_definition_id):
+    filter = [{"fieldName": "contentDefinitionId", "operator": "equals", "values": content_definition_id}]
+    content_definitions = nomad_sdk.search(None, None, None, filter)
+    return content_definitions["items"]
 
 functions = {
     "1": archive_asset,
@@ -645,7 +689,8 @@ functions = {
     "38": update_annotation,
     "39": update_asset,
     "40": update_asset_ad_break,
-    "41": update_asset_language
+    "41": update_asset_language,
+    "42": update_asset_security,
 }
 
 if __name__ == "__main__":
