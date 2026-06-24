@@ -181,9 +181,34 @@ def get_search_saved():
         raise e
     
 def get_search_saved_by_id():
+    # The legacy GET /portal/search-saved/{id} (with the returnedFieldNames query string)
+    # is deprecated. Migrated to fetch the saved-search config via
+    # GET /portal/savedsearch/{id} (returns a SavedSearchModel) and execute it via
+    # POST /portal/search-saved, which accepts a SavedSearchModel and supports
+    # searchResultFields (list of {"name": "..."} objects) in the request body.
+    # SavedSearchModel.criteria is a SearchModel; criteria.searchQuery (per the OpenAPI
+    # spec; legacy records may still surface as criteria.query — we accept either), criteria.pageOffset
+    # (nullable, any JSON type per spec — string or int both valid), criteria.pageSize
+    # (int32, required), criteria.filters, criteria.searchResultFields, etc.
     try:
         SAVED_SEARCH_ID = input("Enter a saved search id: ")
-        SEARCH_SAVED_BY_ID = nomad_sdk.get_search_saved_by_id(SAVED_SEARCH_ID)
+        saved_search = nomad_sdk.get_saved_search(SAVED_SEARCH_ID)
+        if not saved_search:
+            print(f"Saved search '{SAVED_SEARCH_ID}' not found.")
+            return
+        criteria = saved_search.get("criteria") or {}
+        SEARCH_SAVED_BY_ID = nomad_sdk.get_search_saved(
+            criteria.get("searchQuery") or criteria.get("query"),
+            criteria.get("pageOffset"),
+            criteria.get("pageSize"),
+            criteria.get("filters"),
+            criteria.get("sortFields"),
+            criteria.get("searchResultFields"),
+            criteria.get("similarAssetId"),
+            criteria.get("minScore"),
+            criteria.get("excludeTotalRecordCount"),
+            criteria.get("filterBinder"),
+        )
         print(json.dumps(SEARCH_SAVED_BY_ID, indent=4))
     except Exception as e:
         raise e

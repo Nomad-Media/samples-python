@@ -80,7 +80,7 @@ def share_content_with_user_main():
                 break 
 
         print("Sharing content with user")
-        INFO = nomad_sdk.share_content_group_with_user(CONTENT_GROUP_ID, USER_ID_ARR)
+        INFO = nomad_sdk.share_content_group_with_users(CONTENT_GROUP_ID, USER_ID_ARR)
         print(json.dumps(INFO, indent=4))
     except:
         raise Exception()
@@ -98,7 +98,7 @@ def stop_sharing_content_with_user_main():
                 break 
 
         print("Sharing content with user")
-        INFO = nomad_sdk.stop_sharing_content_group_with_user(CONTENT_GROUP_ID, USER_ID_ARR)
+        INFO = nomad_sdk.stop_sharing_content_group_with_users(CONTENT_GROUP_ID, USER_ID_ARR)
         print(json.dumps(INFO, indent=4))
     except:
         raise Exception()
